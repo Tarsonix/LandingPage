@@ -16,6 +16,16 @@ const TrendingUpIcon = TrendingUp;
 const CaseStudies = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeTab, setActiveTab] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640); // Tailwind's sm breakpoint
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const caseStudies = [
     {
@@ -53,6 +63,18 @@ const CaseStudies = () => {
       ],
     },
   ];
+
+  // Short labels for mobile
+  const shortLabelMap: Record<string, string> = {
+    "Support Costs": "Support",
+    "Response Time": "Response",
+    "Customer Satisfaction": "Satisf.",
+    "Issue Resolution": "Resolve",
+    "Processing Time": "Proc.",
+    "Labor Costs": "Labor",
+    "Error Rate": "Error",
+    "Staff Productivity": "Product."
+  };
 
   return (
     <section className="section-padding relative">
@@ -114,7 +136,12 @@ const CaseStudies = () => {
                     dataKey="name" 
                     interval={0}
                     tick={props => {
+                      if (isMobile) {
+                        // Mobile: hide all labels
+                        return null;
+                      }
                       const { x, y, payload } = props;
+                      // Desktop/tablet: rotated, full label
                       return (
                         <text x={x} y={y + 10} textAnchor="end" fill="#ddd" fontSize={13} transform={`rotate(-25,${x},${y})`}>
                           {payload.value.length > 16 ? payload.value.split(' ').map((word, i) => (
