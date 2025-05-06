@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 199 94% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 260 84% 63%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 223 47% 20%;
+    --muted-foreground: 215 20% 80%;
+
+    --accent: 260 84% 63%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 223 47% 20%;
+    --input: 223 47% 20%;
+    --ring: 199 94% 48%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-tarsonix-dark text-tarsonix-white font-sans;
+    background: linear-gradient(135deg, #0A0F1C 0%, #111827 100%);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
+    background: linear-gradient(to right, #0EA5E9, #8B5CF6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  }
+
+  .glow-element {
+    filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.6));
+  }
+
+  .section-padding {
+    @apply px-4 md:px-8 lg:px-16 py-16 md:py-24 lg:py-32;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #0EA5E9, #8B5CF6);
+  }
+
+  .card-gradient {
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.8), rgba(10, 15, 28, 0.8));
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .card-gradient:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+  }
+
+  .hero-gradient {
+    background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.2) 0%, rgba(10, 15, 28, 0) 70%);
+  }
+
+  .btn-gradient {
+    background: linear-gradient(135deg, #0EA5E9, #8B5CF6);
+    transition: all 0.3s ease;
+  }
+
+  .btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+  }
+
+  .glass {
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .glass:hover {
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+  }
+
+  .shimmer-effect {
+    background: linear-gradient(
+      to right,
+      rgba(56, 189, 248, 0) 0%,
+      rgba(56, 189, 248, 0.4) 50%,
+      rgba(56, 189, 248, 0) 100%
+    );
+    background-size: 200% 100%;
+    background-position: -100% 0;
+    animation: shimmer 2s infinite;
+  }
+
+  .grid-background {
+    background-image: 
+      linear-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56, 189, 248, 0.07) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .neon-border {
+    position: relative;
+  }
+
+  .neon-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(135deg, #0EA5E9, #8B5CF6);
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .neon-border:hover::before {
+    opacity: 1;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -468px 0; }
+    100% { background-position: 468px 0; }
+  }
+}
