@@ -1,5 +1,5 @@
 import { Linkedin, Twitter } from "lucide-react";
-import logo from "@/assets/final_logo.png";
+import logo from "@/assets/final_logo.webp";
 
 const Footer = () => {
   const LinkedinIcon = Linkedin;
