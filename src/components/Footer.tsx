@@ -1,10 +1,11 @@
-import { Linkedin, Twitter } from "lucide-react";
+import React from 'react';
 import logo from "@/assets/final_logo.webp";
+import InstagramIcon from "./icons/InstagramIcon";
+import FacebookIcon from "./icons/FacebookIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
+import XIcon from "./icons/XIcon";
 
 const Footer = () => {
-  const LinkedinIcon = Linkedin;
-  const TwitterIcon = Twitter;
-  
   const currentYear = new Date().getFullYear();
 
   return (
@@ -21,10 +22,16 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
-                <LinkedinIcon className="w-5 h-5" />
+                <InstagramIcon className="w-5 h-5 text-white" />
               </a>
               <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
-                <TwitterIcon className="w-5 h-5" />
+                <FacebookIcon className="w-5 h-5 text-white" />
+              </a>
+              <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
+                <LinkedInIcon className="w-5 h-5 text-white" />
+              </a>
+              <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
+                <XIcon className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -35,8 +42,6 @@ const Footer = () => {
               <li><a href="#what-we-do" className="text-tarsonix-white/70 hover:text-tarsonix-white transition-colors">Solutions</a></li>
               <li><a href="#how-it-works" className="text-tarsonix-white/70 hover:text-tarsonix-white transition-colors">Process</a></li>
               <li><a href="#why-choose-us" className="text-tarsonix-white/70 hover:text-tarsonix-white transition-colors">About</a></li>
-              <li><a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-tarsonix-white/70 hover:text-tarsonix-white transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service" target="_blank" rel="noopener noreferrer" className="text-tarsonix-white/70 hover:text-tarsonix-white transition-colors">Terms of Service</a></li>
             </ul>
           </div>
           
