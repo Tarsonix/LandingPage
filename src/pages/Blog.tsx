@@ -6,79 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// Sample blog posts data
-const blogPosts = [
-  {
-    id: 7,
-    title: "AI Tool Roundup: The Most Promising New Automation Platforms of 2024",
-    excerpt: "Our analysis of the latest AI-powered automation tools that are transforming business operations and setting new industry standards.",
-    imageUrl: "https://images.unsplash.com/photo-1593376893114-1aed528d80cf?q=80&w=2070&auto=format&fit=crop",
-    date: "May 28, 2024",
-    readTime: "11 min read",
-    slug: "ai-tool-roundup-2024",
-    featured: true
-  },
-  {
-    id: 6,
-    title: "How n8n 1.0 Release Changes the Automation Landscape",
-    excerpt: "Exploring the major updates in n8n's latest version and how its new features are revolutionizing the way teams approach workflow automation.",
-    imageUrl: "https://images.unsplash.com/photo-1607775090152-3fed28b9b27d?q=80&w=2070&auto=format&fit=crop",
-    date: "April 17, 2024",
-    readTime: "9 min read",
-    slug: "n8n-one-point-zero-release",
-    featured: false
-  },
-  {
-    id: 5,
-    title: "Creating Automated Marketing Workflows with n8n",
-    excerpt: "Discover how to automate your marketing processes using n8n integrations with popular marketing tools and platforms.",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    date: "January 10, 2024",
-    readTime: "7 min read",
-    slug: "automated-marketing-workflows-n8n",
-    featured: false
-  },
-  {
-    id: 4,
-    title: "Data Pipeline Automation: Connecting MongoDB and PostgreSQL with n8n",
-    excerpt: "Learn how to build automated data pipelines between different database systems using n8n's powerful integration capabilities.",
-    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
-    date: "November 18, 2023",
-    readTime: "9 min read",
-    slug: "data-pipeline-automation-n8n",
-    featured: false
-  },
-  {
-    id: 3,
-    title: "Building Customer Support Automation with n8n and Dialogflow",
-    excerpt: "Step-by-step guide to creating an automated customer support system using n8n and Google's Dialogflow.",
-    imageUrl: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop",
-    date: "October 5, 2023",
-    readTime: "12 min read",
-    slug: "customer-support-automation-n8n-dialogflow",
-    featured: false
-  },
-  {
-    id: 2,
-    title: "Integrating GPT-4 with n8n for Intelligent Process Automation",
-    excerpt: "Discover how combining GPT-4's language capabilities with n8n's workflow automation can create truly intelligent business processes.",
-    imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2065&auto=format&fit=crop",
-    date: "August 22, 2023",
-    readTime: "10 min read",
-    slug: "integrating-gpt4-with-n8n",
-    featured: false
-  },
-  {
-    id: 1,
-    title: "Automating Business Workflows with n8n: A Practical Guide",
-    excerpt: "Learn how to create efficient automation workflows with n8n to streamline your business processes and reduce manual tasks.",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
-    date: "June 15, 2023",
-    readTime: "8 min read",
-    slug: "automating-business-workflows-with-n8n",
-    featured: false
-  }
-];
+// Blog posts data - emptied for production
+const blogPosts = [];
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -204,11 +133,20 @@ const Blog = () => {
           ))}
         </div>
 
-        {/* No Results */}
+        {/* No Results or Empty Blog */}
         {filteredPosts.length === 0 && (
           <div className="text-center py-16">
-            <h3 className="text-2xl font-bold text-tarsonix-white/90 mb-2">No articles found</h3>
-            <p className="text-tarsonix-white/70">Try adjusting your search terms</p>
+            {searchTerm ? (
+              <>
+                <h3 className="text-2xl font-bold text-tarsonix-white/90 mb-2">No articles found</h3>
+                <p className="text-tarsonix-white/70">Try adjusting your search terms</p>
+              </>
+            ) : (
+              <>
+                <h3 className="text-2xl font-bold text-tarsonix-white/90 mb-2">Coming Soon</h3>
+                <p className="text-tarsonix-white/70">Our team is working on creating valuable content for you.</p>
+              </>
+            )}
           </div>
         )}
       </main>
