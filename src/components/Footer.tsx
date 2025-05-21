@@ -48,8 +48,24 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li className="text-tarsonix-white/70">info@tarsonix.com</li>
-              <li className="text-tarsonix-white/70">+91-6369743805</li>
+              <li>
+                <a 
+                  href="mailto:info@tarsonix.com" 
+                  className="text-tarsonix-white/70 hover:text-tarsonix-white transition-colors"
+                >
+                  info@tarsonix.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://wa.me/6369743805/?text=Hi%2C%20We%20are%20interested%20in%20AI%20services%20provided%20by%20you" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-tarsonix-white/70 hover:text-tarsonix-white transition-colors"
+                >
+                  +91-6369743805
+                </a>
+              </li>
             </ul>
           </div>
         </div>
