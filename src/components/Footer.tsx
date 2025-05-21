@@ -21,16 +21,16 @@ const Footer = () => {
               Supercharge your business with next-gen AI automation, intelligent agents, and seamless digital transformation.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
+              <a href="https://www.instagram.com/karthik_r02/" target="_blank" rel="noopener noreferrer" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
                 <InstagramIcon className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61576382524888" target="_blank" rel="noopener noreferrer" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
                 <FacebookIcon className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
+              <a href="https://www.linkedin.com/company/107123571/" target="_blank" rel="noopener noreferrer" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
                 <LinkedInIcon className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
+              <a href="https://x.com/karthik_r07" target="_blank" rel="noopener noreferrer" className="text-tarsonix-white/70 hover:text-tarsonix-blue transition-colors">
                 <XIcon className="w-5 h-5 text-white" />
               </a>
             </div>
