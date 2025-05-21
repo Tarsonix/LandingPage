@@ -16,7 +16,23 @@ const CookieBanner: React.FC = () => {
   const handleConsent = (accepted: boolean) => {
     localStorage.setItem(COOKIE_KEY, accepted ? 'accepted' : 'declined');
     setVisible(false);
-    // Optionally, trigger analytics enable/disable here
+    
+    // Handle Google Analytics consent
+    if (accepted) {
+      // Enable Google Analytics tracking
+      if (window.gtag) {
+        window.gtag('consent', 'update', {
+          'analytics_storage': 'granted'
+        });
+      }
+    } else {
+      // Disable Google Analytics tracking
+      if (window.gtag) {
+        window.gtag('consent', 'update', {
+          'analytics_storage': 'denied'
+        });
+      }
+    }
   };
 
   if (!visible) return null;
@@ -29,7 +45,7 @@ const CookieBanner: React.FC = () => {
       aria-label="Cookie consent banner"
     >
       <div className="flex-1 text-sm text-white md:mr-4 mb-2 md:mb-0">
-        We use cookies to enhance your experience. By clicking "Accept", you consent to our use of cookies. Read our{' '}
+        We use cookies and analytics to enhance your experience. By clicking "Accept", you consent to our use of cookies and Google Analytics. Read our{' '}
         <Link
           to="/privacy-policy"
           target="_blank"
