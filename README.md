@@ -1,4 +1,3 @@
-
 # Tarsonix - AI Automation Consultancy
 
 ## Overview
@@ -80,6 +79,16 @@ tarsonix/
 ├── index.html
 └── package.json
 ```
+
+## Configuration
+
+### Google Analytics
+
+Google Analytics is configured directly in the code rather than through environment variables:
+
+- The GA Measurement ID is set in `src/lib/constants.ts`
+- To change the ID, simply update the `GA_MEASUREMENT_ID` constant in this file
+- No environment variables are required for Analytics to function
 
 ## Customization
 

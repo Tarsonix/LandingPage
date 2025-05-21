@@ -9,11 +9,9 @@ import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 import CookieBanner from "./components/CookieBanner";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import { GA_MEASUREMENT_ID } from "./lib/constants";
 
 const queryClient = new QueryClient();
-
-// Google Analytics measurement ID from environment variables
-const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -21,7 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        {GA_MEASUREMENT_ID && <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />}
+        <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
