@@ -7,7 +7,18 @@ import { Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // Blog posts data - emptied for production
-const blogPosts = [];
+const blogPosts = [
+  {
+    id: 1,
+    title: "Midjourney Video V1: The Complete Guide to AI Video Generation Revolution",
+    excerpt: "Discover everything about Midjourney's groundbreaking V1 video model that's transforming AI video generation. Learn features, pricing, comparisons, and how to get started with this game-changing tool.",
+    imageUrl: "https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "June 19, 2025",
+    readTime: "12 min read",
+    slug: "midjourney-video-v1-complete-guide",
+    featured: true
+  }
+];
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState("");
