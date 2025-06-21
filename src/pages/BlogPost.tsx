@@ -23,10 +23,212 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "cursor-slack-integration-ai-development": {
+    id: 2,
+    title: "Cursor is Now in Slack: Revolutionizing AI-Powered Development Workflows",
+    excerpt: "Discover how Cursor's groundbreaking Slack integration transforms team collaboration with AI-powered Background Agents. Learn setup, features and best practices for seamless development workflows.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/slack_cursor-integration.jpg",
+    date: "June 21, 2025",
+    readTime: "8 min read",
+    slug: "cursor-slack-integration-ai-development",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>Introduction: The Future of Development Collaboration</h2>
+        <p>The development landscape has just witnessed a revolutionary leap forward with Cursor's groundbreaking Slack integration, launched in June 2025. This innovative feature brings AI-powered Background Agents directly into your team's communication hub, transforming how developers collaborate, debug and ship code.</p>
+        
+        <p>With over 20 million developers already using Cursor as their AI-first code editor, this Slack integration represents a pivotal moment in software development workflows. By seamlessly connecting AI assistance with team communication, Cursor is eliminating the context-switching that has long plagued development teams.</p>
+
+        <h2>What is Cursor's Slack Integration?</h2>
+        <p>Cursor's Slack integration allows teams to launch <strong>Background Agents</strong> directly from Slack by mentioning <code>@Cursor</code>. These AI agents can read thread context, understand ongoing discussions and autonomously create pull requests in GitHub, all without leaving your conversation.</p>
+
+        <h3>Key Features of Cursor in Slack:</h3>
+        <ul>
+          <li><strong>Background Agents:</strong> AI agents that run remotely in secure environments</li>
+          <li><strong>Thread Context Understanding:</strong> Agents read entire Slack threads for full context</li>
+          <li><strong>GitHub Integration:</strong> Automatic PR creation and management</li>
+          <li><strong>Real-time Updates:</strong> Status notifications directly in Slack channels</li>
+          <li><strong>Multi-repository Support:</strong> Work across different codebases seamlessly</li>
+          <li><strong>Team Collaboration:</strong> Multiple team members can interact with agents</li>
+        </ul>
+
+        <h2>How Background Agents Work</h2>
+        <p>Background Agents represent a new paradigm in AI-assisted development. Unlike traditional AI tools that require constant interaction, these agents operate autonomously while keeping teams informed of their progress.</p>
+
+        <h3>The Agent Workflow:</h3>
+        <ol>
+          <li><strong>Activation:</strong> Mention <code>@Cursor</code> in any Slack channel or thread</li>
+          <li><strong>Context Analysis:</strong> Agent reads and understands the conversation history</li>
+          <li><strong>Task Execution:</strong> Performs coding tasks in a secure, remote environment</li>
+          <li><strong>Progress Updates:</strong> Provides real-time status updates in Slack</li>
+          <li><strong>Completion:</strong> Delivers results with links to Cursor and GitHub</li>
+        </ol>
+
+        <h2>Setting Up Cursor in Slack</h2>
+        <p>Getting started with Cursor's Slack integration is straightforward, requiring just a few configuration steps:</p>
+
+        <h3>Prerequisites:</h3>
+        <ul>
+          <li>Active Cursor account with Background Agent access</li>
+          <li>Slack workspace with admin permissions</li>
+          <li>GitHub account connected to Cursor</li>
+          <li>Usage-based pricing enabled (Background Agents use Max Mode)</li>
+        </ul>
+
+        <h3>Installation Steps:</h3>
+        <ol>
+          <li><strong>Navigate to Integrations:</strong> Go to <code>cursor.com/dashboard → Integrations → Slack</code></li>
+          <li><strong>Install Slack App:</strong> Click "Connect" and authorize the Cursor Slack app</li>
+          <li><strong>Configure GitHub:</strong> Ensure your GitHub account is connected</li>
+          <li><strong>Set Default Repository:</strong> Choose your primary working repository</li>
+          <li><strong>Configure Privacy Settings:</strong> Adjust data sharing preferences</li>
+          <li><strong>Test Integration:</strong> Try mentioning <code>@Cursor</code> in a channel</li>
+        </ol>
+
+        <h2>Advanced Commands and Options</h2>
+        <p>Cursor's Slack integration offers sophisticated command options for power users and teams with specific workflow requirements:</p>
+
+        <h3>Essential Commands:</h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+          <thead>
+            <tr style="background-color: rgba(59, 130, 246, 0.1);">
+              <th style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px; text-align: left;">Command</th>
+              <th style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px; text-align: left;">Description</th>
+              <th style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px; text-align: left;">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><code>@Cursor [prompt]</code></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">Start a Background Agent</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">@Cursor fix the login bug</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><code>@Cursor settings</code></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">Configure defaults</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">@Cursor settings</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><code>@Cursor list my agents</code></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">Show running agents</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">@Cursor list my agents</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><code>@Cursor help</code></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">View available commands</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">@Cursor help</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Advanced Options:</h3>
+        <ul>
+          <li><strong>Repository Selection:</strong> <code>@Cursor [repo=owner/repo] fix bug</code></li>
+          <li><strong>Branch Specification:</strong> <code>@Cursor [branch=dev] implement feature</code></li>
+          <li><strong>Model Selection:</strong> <code>@Cursor [model=o3] complex refactor</code></li>
+          <li><strong>Auto-PR Control:</strong> <code>@Cursor [autopr=false] draft changes</code></li>
+        </ul>
+
+        <h2>Best Practices for Teams</h2>
+        <p>To maximize the benefits of Cursor's Slack integration, teams should establish clear workflows and communication patterns:</p>
+
+        <h3>Communication Guidelines:</h3>
+        <ul>
+          <li><strong>Context-Rich Discussions:</strong> Provide comprehensive background in threads before invoking agents</li>
+          <li><strong>Clear Task Definition:</strong> Specify exact requirements and acceptance criteria</li>
+          <li><strong>Repository Clarity:</strong> Always specify target repositories when working across multiple projects</li>
+          <li><strong>Progress Monitoring:</strong> Regularly check agent status and provide feedback</li>
+        </ul>
+
+        <h3>Workflow Integration:</h3>
+        <ul>
+          <li><strong>Daily Standups:</strong> Include agent-generated work in team updates</li>
+          <li><strong>Code Review Process:</strong> Establish review workflows for agent-created PRs</li>
+          <li><strong>Issue Tracking:</strong> Link Slack discussions to GitHub issues and project boards</li>
+          <li><strong>Documentation:</strong> Maintain records of successful agent interactions for future reference</li>
+        </ul>
+
+        <h2>Security and Privacy Considerations</h2>
+        <p>With AI agents accessing both Slack conversations and code repositories, security and privacy are paramount concerns that Cursor addresses comprehensively:</p>
+
+        <h3>Data Security:</h3>
+        <ul>
+          <li><strong>Secure Environments:</strong> Agents run in isolated, secure cloud environments</li>
+          <li><strong>No Privacy Mode Support:</strong> Currently incompatible with Cursor's Legacy Privacy Mode</li>
+          <li><strong>Configurable Data Sharing:</strong> Teams control what information agents can access</li>
+          <li><strong>Audit Trails:</strong> Complete logging of agent actions and data access</li>
+        </ul>
+
+        <h3>Access Controls:</h3>
+        <ul>
+          <li><strong>Repository Permissions:</strong> Agents respect existing GitHub access controls</li>
+          <li><strong>Channel Restrictions:</strong> Admins can control which channels have agent access</li>
+          <li><strong>User Authentication:</strong> All actions tied to authenticated user accounts</li>
+          <li><strong>Team Plans Only:</strong> Advanced features require Cursor Team subscriptions</li>
+        </ul>
+
+        <h2>Pricing and Cost Considerations</h2>
+        <p>Understanding the cost implications of using Background Agents in Slack is crucial for teams planning their AI-assisted development workflows:</p>
+
+        <h3>Usage-Based Pricing:</h3>
+        <p>Background Agents operate using Cursor's Max Mode, which employs token-based pricing similar to API-based AI services. This means costs scale with usage complexity and frequency.</p>
+
+        <h3>Cost Optimization Strategies:</h3>
+        <ul>
+          <li><strong>Targeted Usage:</strong> Use agents for complex tasks that justify the computational cost</li>
+          <li><strong>Team Coordination:</strong> Avoid duplicate agent requests for the same issues</li>
+          <li><strong>Monitoring Usage:</strong> Regular review of agent usage through Cursor's dashboard</li>
+          <li><strong>Clear Instructions:</strong> Specific prompts reduce iteration cycles and costs</li>
+        </ul>
+
+        <h2>Real-World Use Cases and Benefits</h2>
+        <p>The Cursor Slack integration shines in numerous development scenarios, offering tangible productivity improvements across different team structures and project types:</p>
+
+        <h3>Bug Fixes and Hotfixes:</h3>
+        <p>When critical issues arise, teams can immediately discuss the problem in Slack and have Cursor agents begin working on fixes while the discussion continues. This parallel processing dramatically reduces time-to-resolution.</p>
+
+        <h3>Code Reviews and Refactoring:</h3>
+        <p>During code review discussions, team members can ask Cursor agents to implement suggested improvements or refactor code sections, creating immediate, reviewable changes.</p>
+
+        <h3>Feature Development:</h3>
+        <p>Product discussions can seamlessly transition into development tasks, with agents understanding context from product requirements discussed in Slack threads.</p>
+
+        <h3>Documentation and Learning:</h3>
+        <p>Teams can ask agents to explain complex code sections, generate documentation, or provide implementation examples based on ongoing technical discussions.</p>
+
+        <h2>Conclusion: The Future of AI-Powered Development</h2>
+        <p>Cursor's Slack integration represents a paradigm shift in how development teams collaborate and leverage AI assistance. By bringing intelligent agents directly into team communication channels, Cursor eliminates the friction between discussion and implementation that has long characterized software development workflows.</p>
+
+        <p>The benefits extend far beyond simple automation. Teams report improved collaboration, faster problem resolution and enhanced learning opportunities as developers work alongside AI agents that understand both code and context. This integration doesn't replace human creativity and decision-making, it amplifies it.</p>
+
+        <p>As AI continues to evolve and integrate deeper into development workflows, early adopters of tools like Cursor's Slack integration position themselves at the forefront of a more efficient, collaborative and intelligent approach to software development.</p>
+
+        <h3>Key Takeaways:</h3>
+        <ul>
+          <li><strong>Seamless Integration:</strong> AI assistance becomes part of natural team communication</li>
+          <li><strong>Context Awareness:</strong> Agents understand both technical requirements and team dynamics</li>
+          <li><strong>Autonomous Operation:</strong> Background agents work independently while keeping teams informed</li>
+          <li><strong>Scalable Solution:</strong> Suitable for teams of all sizes, from startups to enterprises</li>
+          <li><strong>Future-Ready:</strong> Positions teams for continued AI advancement in development workflows</li>
+        </ul>
+
+        <p>The question isn't whether AI will transform software development, it's whether your team will be ready to harness its full potential. Cursor's Slack integration offers a practical, powerful way to begin that transformation today.</p>
+
+        <h2>Additional Resources</h2>
+        <ul>
+          <li><strong>Official Documentation:</strong> <a href="https://docs.cursor.com/slack" target="_blank" rel="noopener noreferrer">docs.cursor.com/slack</a></li>
+          <li><strong>Setup Guide:</strong> <a href="https://cursor.com/dashboard" target="_blank" rel="noopener noreferrer">cursor.com/dashboard</a></li>
+          <li><strong>Community Forum:</strong> Join the Cursor community for tips, tricks and best practices</li>
+          <li><strong>Support:</strong> Contact Cursor support for enterprise implementation assistance</li>
+        </ul>
+
+        <p><em>Ready to revolutionize your development workflow? Start your free trial of Cursor's Slack integration today and experience the future of AI-powered team collaboration.</em></p>
+      </div>`
+  },
   "midjourney-video-v1-complete-guide": {
     id: 1,
     title: "Midjourney Video V1: The Complete Guide to AI Video Generation Revolution",
-    excerpt: "Discover everything about Midjourney's groundbreaking V1 video model that's transforming AI video generation. Learn features, pricing, comparisons, and how to get started with this game-changing tool.",
+    excerpt: "Discover everything about Midjourney's groundbreaking V1 video model that's transforming AI video generation. Learn features, pricing, comparisons and how to get started with this game-changing tool.",
     imageUrl: "https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: "June 19, 2025",
     readTime: "12 min read",
@@ -153,7 +355,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 
         <h3>Content Creation:</h3>
         <ul>
-          <li><strong>Social Media:</strong> Create engaging posts for Instagram, TikTok, and other platforms</li>
+          <li><strong>Social Media:</strong> Create engaging posts for Instagram, TikTok and other platforms</li>
           <li><strong>Marketing:</strong> Develop eye-catching promotional content and advertisements</li>
           <li><strong>Presentations:</strong> Add dynamic elements to business presentations and pitches</li>
           <li><strong>Storytelling:</strong> Bring illustrations and concept art to life</li>
@@ -161,7 +363,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 
         <h3>Professional Applications:</h3>
         <ul>
-          <li><strong>Concept Visualization:</strong> Animate architectural designs, product concepts, and prototypes</li>
+          <li><strong>Concept Visualization:</strong> Animate architectural designs, product concepts and prototypes</li>
           <li><strong>Educational Content:</strong> Create engaging visual aids for teaching and training</li>
           <li><strong>Art and Design:</strong> Explore new forms of digital art and creative expression</li>
           <li><strong>Rapid Prototyping:</strong> Quickly visualize ideas and concepts in motion</li>
@@ -264,9 +466,9 @@ const blogPostsData: Record<string, BlogPostData> = {
         <h2>Conclusion: The Future of AI Video Creation</h2>
         <p>Midjourney's V1 Video Model represents more than just another AI tool - it's a glimpse into the future of creative content generation. By combining the company's renowned artistic capabilities with accessible video generation technology, V1 democratizes video creation in ways previously unimaginable.</p>
 
-        <p>While the tool has limitations and faces legal challenges, its impact on the creative industry is undeniable. For content creators, marketers, and artists looking to explore new forms of expression, Midjourney V1 offers an affordable, user-friendly entry point into AI video generation.</p>
+        <p>While the tool has limitations and faces legal challenges, its impact on the creative industry is undeniable. For content creators, marketers and artists looking to explore new forms of expression, Midjourney V1 offers an affordable, user-friendly entry point into AI video generation.</p>
 
-        <p>As the technology continues to evolve toward more sophisticated world models and interactive experiences, early adopters of V1 will be well-positioned to leverage these advancing capabilities. The AI video revolution has begun, and Midjourney V1 is leading the charge toward a more creative, accessible future.</p>
+        <p>As the technology continues to evolve toward more sophisticated world models and interactive experiences, early adopters of V1 will be well-positioned to leverage these advancing capabilities. The AI video revolution has begun and Midjourney V1 is leading the charge toward a more creative, accessible future.</p>
 
         <h3>Ready to Start Creating?</h3>
         <p>Visit <a href="https://midjourney.com" target="_blank" rel="noopener noreferrer" style="color: #3b82f6;">midjourney.com</a> to begin your AI video generation journey. With plans starting at just $10/month, there's never been a better time to explore the possibilities of AI-powered video creation.</p>

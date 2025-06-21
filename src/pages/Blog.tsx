@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 2,
+    title: "Cursor is Now in Slack: Revolutionizing AI-Powered Development Workflows",
+    excerpt: "Discover how Cursor's groundbreaking Slack integration transforms team collaboration with AI-powered Background Agents. Learn setup, features, and best practices for seamless development workflows.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/slack_cursor-integration.jpg",
+    date: "June 21, 2025",
+    readTime: "8 min read",
+    slug: "cursor-slack-integration-ai-development",
+    featured: true
+  },
+  {
     id: 1,
     title: "Midjourney Video V1: The Complete Guide to AI Video Generation Revolution",
     excerpt: "Discover everything about Midjourney's groundbreaking V1 video model that's transforming AI video generation. Learn features, pricing, comparisons, and how to get started with this game-changing tool.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "June 19, 2025",
     readTime: "12 min read",
     slug: "midjourney-video-v1-complete-guide",
-    featured: true
+    featured: false
   }
 ];
 
