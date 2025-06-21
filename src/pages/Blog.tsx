@@ -11,7 +11,7 @@ const blogPosts = [
   {
     id: 3,
     title: "Manus Cloud Browser: The Future of AI-Powered Web Automation and Cross-Device Sync",
-    excerpt: "Explore Manus Cloud Browser, the revolutionary AI automation platform that syncs login states across devices, enables seamless cross-session access, and transforms how we interact with web applications through intelligent automation.",
+    excerpt: "Explore Manus Cloud Browser, the revolutionary AI automation platform that syncs login states across devices, enables seamless cross-session access and transforms how we interact with web applications through intelligent automation.",
     imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/manus_cloud_browser.jpg",
     date: "June 21, 2025",
     readTime: "10 min read",
@@ -21,7 +21,7 @@ const blogPosts = [
   {
     id: 2,
     title: "Cursor is Now in Slack: Revolutionizing AI-Powered Development Workflows",
-    excerpt: "Discover how Cursor's groundbreaking Slack integration transforms team collaboration with AI-powered Background Agents. Learn setup, features, and best practices for seamless development workflows.",
+    excerpt: "Discover how Cursor's groundbreaking Slack integration transforms team collaboration with AI-powered Background Agents. Learn setup, features and best practices for seamless development workflows.",
     imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/slack_cursor-integration.jpg",
     date: "June 21, 2025",
     readTime: "8 min read",
@@ -31,7 +31,7 @@ const blogPosts = [
   {
     id: 1,
     title: "Midjourney Video V1: The Complete Guide to AI Video Generation Revolution",
-    excerpt: "Discover everything about Midjourney's groundbreaking V1 video model that's transforming AI video generation. Learn features, pricing, comparisons, and how to get started with this game-changing tool.",
+    excerpt: "Discover everything about Midjourney's groundbreaking V1 video model that's transforming AI video generation. Learn features, pricing, comparisons and how to get started with this game-changing tool.",
     imageUrl: "https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: "June 19, 2025",
     readTime: "12 min read",
