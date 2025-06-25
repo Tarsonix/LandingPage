@@ -9,6 +9,26 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 5,
+    title: "ElevenLabs Launches Mobile App: AI Voice Generation Now Available on iOS & Android",
+    excerpt: "Discover ElevenLabs' groundbreaking mobile app that brings studio-quality AI voice generation to your smartphone. Learn about features, pricing and how it's revolutionizing content creation on the go.",
+    imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "June 24, 2025",
+    readTime: "8 min read",
+    slug: "elevenlabs-mobile-app-ios-android-launch",
+    featured: true
+  },
+  {
+    id: 4,
+    title: "ElevenLabs Launches 11.ai: The Voice-First AI Assistant That Actually Takes Action",
+    excerpt: "Discover ElevenLabs' revolutionary 11.ai assistant that combines voice-first interaction with MCP integration to automate real workflows. Learn features, setup and how it transforms productivity.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/11ai_voice_assistant.jpg",
+    date: "June 24, 2025",
+    readTime: "9 min read",
+    slug: "elevenlabs-11ai-voice-assistant-launch",
+    featured: false
+  },
+  {
     id: 3,
     title: "Manus Cloud Browser: The Future of AI-Powered Web Automation and Cross-Device Sync",
     excerpt: "Explore Manus Cloud Browser, the revolutionary AI automation platform that syncs login states across devices, enables seamless cross-session access and transforms how we interact with web applications through intelligent automation.",
@@ -16,7 +36,7 @@ const blogPosts = [
     date: "June 21, 2025",
     readTime: "10 min read",
     slug: "manus-cloud-browser-ai-automation-guide",
-    featured: true
+    featured: false
   },
   {
     id: 2,
