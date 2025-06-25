@@ -23,6 +23,303 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "google-gemini-cli-open-source-ai-agent-announcement": {
+    id: 6,
+    title: "Google Launches Gemini CLI: Revolutionary Open-Source AI Agent for Developers",
+    excerpt: "Google unveils Gemini CLI, a groundbreaking open-source AI agent that brings Gemini 2.5 Pro directly to your terminal. Discover features, installation and how it's transforming developer workflows with industry-leading usage limits.",
+    imageUrl: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "June 25, 2025",
+    readTime: "12 min read",
+    slug: "google-gemini-cli-open-source-ai-agent-announcement",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>Google Revolutionizes Developer Experience with Gemini CLI</h2>
+        <p>On June 25, 2025, Google made a groundbreaking announcement that will fundamentally change how developers interact with AI in their daily workflows. The tech giant unveiled <strong>Gemini CLI</strong>, an open-source AI agent that brings the full power of Gemini 2.5 Pro directly into developers' terminals. This marks a significant milestone in making advanced AI assistance accessible where developers spend most of their time, the command line interface.</p>
+        
+        <p>As Taylor Mullen, Senior Staff Software Engineer at Google, aptly stated: <em>"For developers, the command line interface (CLI) isn't just a tool; it's home. The terminal's efficiency, ubiquity and portability make it the go-to utility for getting work done."</em> Gemini CLI addresses the growing demand for integrated AI assistance in this familiar environment.</p>
+
+        <h2>What is Gemini CLI?</h2>
+        <p>Gemini CLI is an <strong>open-source AI agent</strong> released under the Apache 2.0 license that provides lightweight access to Google's Gemini models directly from your terminal. While it excels at coding tasks, Google designed it as a versatile utility capable of handling a wide range of activities, from content generation and problem-solving to deep research and task management.</p>
+
+        <h3>Core Capabilities:</h3>
+        <ul>
+          <li><strong>Code Understanding:</strong> Query and edit large codebases within Gemini's 1 million token context window</li>
+          <li><strong>Multimodal Generation:</strong> Create new applications from PDFs or sketches using Gemini's advanced capabilities</li>
+          <li><strong>Workflow Automation:</strong> Handle operational tasks like querying pull requests and managing complex rebases</li>
+          <li><strong>Tool Integration:</strong> Connect with MCP servers and extensions for media generation with Imagen, Veo and Lyria</li>
+          <li><strong>Real-time Research:</strong> Ground queries with Google Search integration for up-to-date information</li>
+        </ul>
+
+        <h2>Unprecedented Free Usage Limits</h2>
+        <p>Google has set a new industry standard with Gemini CLI's generous free tier. Users can access the tool at no charge by simply logging in with a personal Google account to receive a free Gemini Code Assist license.</p>
+
+        <h3>Industry-Leading Free Allowances:</h3>
+        <ul>
+          <li><strong>60 model requests per minute</strong> - Double the industry average</li>
+          <li><strong>1,000 requests per day</strong> at no charge</li>
+          <li><strong>Access to Gemini 2.5 Pro</strong> with its massive 1 million token context window</li>
+          <li><strong>Cross-platform integration</strong> with VS Code through Gemini Code Assist</li>
+        </ul>
+
+        <p>According to Google's announcement, these limits were designed to ensure users "rarely, if ever, hit a limit during this preview," representing roughly double the average usage patterns observed during internal testing.</p>
+
+        <h2>Advanced Features and Built-in Tools</h2>
+        <p>Gemini CLI comes packed with powerful features that distinguish it from other command-line AI tools in the market.</p>
+
+        <h3>Built-in Tool Suite:</h3>
+        <ul>
+          <li><strong>Google Search Integration:</strong> Ground prompts with real-time web data and external context</li>
+          <li><strong>Model Context Protocol (MCP) Support:</strong> Extend capabilities through community-built extensions</li>
+          <li><strong>Custom Prompt System:</strong> Tailor Gemini for specific workflows using GEMINI.md files</li>
+          <li><strong>Non-interactive Mode:</strong> Automate tasks by invoking Gemini CLI within scripts</li>
+          <li><strong>File Manipulation:</strong> Direct code editing and project management capabilities</li>
+        </ul>
+
+        <h3>Reason and Act (ReAct) Loop:</h3>
+        <p>One of Gemini CLI's most sophisticated features is its implementation of a reason and act loop for complex tasks. This enables the AI to:</p>
+        <ul>
+          <li>Build multi-step plans for complex development tasks</li>
+          <li>Auto-recover from failed implementation paths</li>
+          <li>Recommend solutions that developers might not have imagined</li>
+          <li>Handle bug fixing, feature creation and test coverage systematically</li>
+        </ul>
+
+        <h2>Installation and Getting Started</h2>
+        <p>Getting started with Gemini CLI is remarkably straightforward, requiring only Node.js 18+ as a prerequisite.</p>
+
+        <h3>Quick Installation Steps:</h3>
+        <div style="background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; padding: 16px; margin: 20px 0;">
+          <p><strong>Method 1: Direct NPX Execution</strong></p>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">npx https://github.com/google-gemini/gemini-cli</code>
+        </div>
+
+        <div style="background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; padding: 16px; margin: 20px 0;">
+          <p><strong>Method 2: Global Installation</strong></p>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">npm install -g @google/gemini-cli</code><br/>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">gemini</code>
+        </div>
+
+        <h3>Authentication Options:</h3>
+        <ul>
+          <li><strong>Personal Google Account:</strong> Free tier with generous usage limits</li>
+          <li><strong>Google AI Studio API Key:</strong> For advanced users requiring specific models</li>
+          <li><strong>Vertex AI Integration:</strong> Enterprise-grade usage-based billing</li>
+          <li><strong>Gemini Code Assist Licenses:</strong> Standard and Enterprise tiers available</li>
+        </ul>
+
+        <h2>Integration with Gemini Code Assist</h2>
+        <p>Google has seamlessly integrated Gemini CLI with its existing Gemini Code Assist platform, ensuring developers receive consistent AI assistance across both terminal and IDE environments.</p>
+
+        <h3>Shared Technology Benefits:</h3>
+        <ul>
+          <li><strong>Agent Mode in VS Code:</strong> Multi-step collaborative reasoning for complex tasks</li>
+          <li><strong>Unified Experience:</strong> Same underlying technology across platforms</li>
+          <li><strong>Free Tier Access:</strong> Highest usage limits in the market for all plan tiers</li>
+          <li><strong>Cross-Platform Sync:</strong> Consistent AI assistance in terminal and IDE</li>
+        </ul>
+
+        <h2>Open Source and Community-Driven Development</h2>
+        <p>Google's decision to release Gemini CLI under the Apache 2.0 license demonstrates its commitment to fostering an open development ecosystem.</p>
+
+        <h3>Open Source Advantages:</h3>
+        <ul>
+          <li><strong>Code Transparency:</strong> Developers can inspect and verify security implications</li>
+          <li><strong>Community Contributions:</strong> Bug reports, feature suggestions and code improvements welcomed</li>
+          <li><strong>Extensibility:</strong> Built on emerging standards like MCP and system prompts</li>
+          <li><strong>GitHub Repository:</strong> Active development and issue tracking at github.com/google-gemini/gemini-cli</li>
+        </ul>
+
+        <h3>Current Community Engagement:</h3>
+        <p>The project has already gained significant traction with <strong>10.4k stars</strong> and <strong>628 forks</strong> on GitHub, indicating strong developer interest and adoption.</p>
+
+        <h2>Competitive Landscape and Market Impact</h2>
+        <p>Gemini CLI enters a competitive market but brings unique advantages that set it apart from existing solutions.</p>
+
+        <h3>Key Competitors:</h3>
+        <ul>
+          <li><strong>OpenAI's Codex CLI:</strong> Limited to specific coding tasks</li>
+          <li><strong>Anthropic's Claude Code:</strong> Focused on code analysis and generation</li>
+          <li><strong>GitHub Copilot CLI:</strong> Git and GitHub-specific automation</li>
+          <li><strong>Various AI Terminal Tools:</strong> Smaller-scale solutions with limited capabilities</li>
+        </ul>
+
+        <h3>Gemini CLI's Competitive Advantages:</h3>
+        <ul>
+          <li><strong>Multimodal Capabilities:</strong> Beyond text to include images, audio and video</li>
+          <li><strong>Massive Context Window:</strong> 1 million tokens vs. competitors' smaller limits</li>
+          <li><strong>Real-time Web Integration:</strong> Google Search grounding for current information</li>
+          <li><strong>Enterprise Integration:</strong> Seamless connection with Google Cloud and Workspace</li>
+          <li><strong>Open Source Nature:</strong> Community-driven development and transparency</li>
+        </ul>
+
+        <h2>Real-World Use Cases and Applications</h2>
+        <p>Gemini CLI's versatility enables a wide range of practical applications across different development scenarios.</p>
+
+        <h3>Development Workflow Examples:</h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+          <thead>
+            <tr style="background-color: rgba(59, 130, 246, 0.1);">
+              <th style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px; text-align: left;">Use Case</th>
+              <th style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px; text-align: left;">Command Example</th>
+              <th style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px; text-align: left;">Benefit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><strong>Codebase Analysis</strong></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">"Describe the main pieces of this system's architecture"</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">Rapid onboarding to new projects</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><strong>Feature Development</strong></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">"Implement a first draft for GitHub issue #123"</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">Accelerated development cycles</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><strong>Migration Tasks</strong></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">"Help me migrate this codebase to the latest version of Java"</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">Automated legacy system updates</td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;"><strong>File Management</strong></td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">"Convert all images in this directory to PNG"</td>
+              <td style="border: 1px solid rgba(59, 130, 246, 0.3); padding: 12px;">Automated system administration</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Technical Architecture and Security</h2>
+        <p>Google has implemented robust security measures and architectural decisions to ensure Gemini CLI meets enterprise-grade requirements.</p>
+
+        <h3>Security Features:</h3>
+        <ul>
+          <li><strong>Multi-layered Sandboxing:</strong> Isolated execution environments for code operations</li>
+          <li><strong>User Confirmation:</strong> Required approval for sensitive actions</li>
+          <li><strong>Open Source Transparency:</strong> Code available for security auditing</li>
+          <li><strong>Google Cloud Integration:</strong> Enterprise-grade security infrastructure</li>
+        </ul>
+
+        <h3>Performance Optimizations:</h3>
+        <ul>
+          <li><strong>Streaming Responses:</strong> Real-time output for improved user experience</li>
+          <li><strong>Local Processing:</strong> Reduced latency for common operations</li>
+          <li><strong>Context Caching:</strong> Efficient handling of large codebases</li>
+          <li><strong>Cross-platform Support:</strong> Optimized for Mac, Windows and Linux</li>
+        </ul>
+
+        <h2>Future Roadmap and Implications</h2>
+        <p>The launch of Gemini CLI represents more than just a new tool, it signals a fundamental shift toward AI-integrated development environments.</p>
+
+        <h3>Industry Implications:</h3>
+        <ul>
+          <li><strong>Democratization of AI:</strong> Advanced AI capabilities accessible to all developers</li>
+          <li><strong>Workflow Transformation:</strong> Natural language interfaces becoming standard</li>
+          <li><strong>Open Source Leadership:</strong> Google setting precedent for transparent AI development</li>
+          <li><strong>Competitive Pressure:</strong> Other tech giants likely to follow with similar offerings</li>
+        </ul>
+
+        <h3>Expected Developments:</h3>
+        <ul>
+          <li><strong>Enhanced Multimodal Capabilities:</strong> Improved image and video processing</li>
+          <li><strong>Expanded Language Support:</strong> More programming languages and frameworks</li>
+          <li><strong>Enterprise Features:</strong> Advanced team collaboration and management tools</li>
+          <li><strong>Community Extensions:</strong> Growing ecosystem of third-party integrations</li>
+        </ul>
+
+        <h2>Getting Started: Your Next Steps</h2>
+        <p>Ready to experience the future of AI-assisted development? Here's how to get started with Gemini CLI today.</p>
+
+        <h3>Immediate Action Items:</h3>
+        <ol>
+          <li><strong>Install Node.js 18+</strong> if not already available on your system</li>
+          <li><strong>Run the installation command:</strong> <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">npm install -g @google/gemini-cli</code></li>
+          <li><strong>Authenticate</strong> with your Google account for free tier access</li>
+          <li><strong>Explore the documentation</strong> at the official GitHub repository</li>
+          <li><strong>Join the community</strong> to share feedback and contribute improvements</li>
+        </ol>
+
+        <h3>Best Practices for New Users:</h3>
+        <ul>
+          <li><strong>Start Small:</strong> Begin with simple queries to understand capabilities</li>
+          <li><strong>Explore Built-in Tools:</strong> Experiment with Google Search integration and MCP support</li>
+          <li><strong>Customize Your Setup:</strong> Create GEMINI.md files for project-specific contexts</li>
+          <li><strong>Monitor Usage:</strong> Track your request usage to optimize workflow efficiency</li>
+          <li><strong>Provide Feedback:</strong> Report issues and suggest improvements on GitHub</li>
+        </ul>
+
+        <h2>Conclusion: A New Era of AI-Assisted Development</h2>
+        <p>Google's launch of Gemini CLI marks a pivotal moment in the evolution of developer tools. By bringing advanced AI capabilities directly to the terminal, where developers are most productive, Google has created a solution that promises to transform how we approach software development, system administration and creative problem-solving.</p>
+
+        <p>The combination of generous free usage limits, open-source transparency and seamless integration with existing workflows positions Gemini CLI as more than just another AI tool, it's a glimpse into the future of human-AI collaboration in software development.</p>
+
+        <p>As Ryan J. Salva, Senior Director of Product Management at Google, noted in the announcement: <em>"We've also integrated Gemini CLI with Google's AI coding assistant, Gemini Code Assist, so that all developers ,  on free, Standard and Enterprise Code Assist plans ,  get prompt-driven, AI-first coding in both VS Code and Gemini CLI."</em></p>
+
+        <p>The future of development is here and it's open source. Get started with Gemini CLI today and experience the next generation of AI-assisted development.</p>
+
+        <div style="margin: 60px 0 40px 0; padding: 32px; background: rgba(59, 130, 246, 0.05); border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.2);">
+          <h3 style="margin-bottom: 24px; color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            References & Sources
+          </h3>
+          <div style="space-y: 16px;">
+            <div style="padding: 16px; background: rgba(0, 0, 0, 0.2); border-radius: 8px; border-left: 4px solid rgba(59, 130, 246, 0.6); margin-bottom: 16px;">
+              <div style="font-weight: 600; color: rgba(255, 255, 255, 0.9); margin-bottom: 4px;">
+                Google Official Announcement
+              </div>
+              <div style="font-size: 0.9em; color: rgba(255, 255, 255, 0.7); margin-bottom: 8px;">
+                <em>Gemini CLI: your open-source AI agent</em> - The Keyword Blog
+              </div>
+              <div style="font-size: 0.85em; color: rgba(255, 255, 255, 0.6);">
+                Published: June 25, 2025
+              </div>
+              <a href="https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 style="display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; color: rgba(59, 130, 246, 0.8); text-decoration: none; font-size: 0.85em; hover: color: rgba(59, 130, 246, 1);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15,3 21,3 21,9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                View Source
+              </a>
+            </div>
+            
+            <div style="padding: 16px; background: rgba(0, 0, 0, 0.2); border-radius: 8px; border-left: 4px solid rgba(59, 130, 246, 0.6);">
+              <div style="font-weight: 600; color: rgba(255, 255, 255, 0.9); margin-bottom: 4px;">
+                GitHub Repository
+              </div>
+              <div style="font-size: 0.9em; color: rgba(255, 255, 255, 0.7); margin-bottom: 8px;">
+                <em>google-gemini/gemini-cli: An open-source AI agent</em> - Official Repository
+              </div>
+              <div style="font-size: 0.85em; color: rgba(255, 255, 255, 0.6);">
+                Stars: 10.4k+ | Forks: 628+ | License: Apache 2.0
+              </div>
+              <a href="https://github.com/google-gemini/gemini-cli" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 style="display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; color: rgba(59, 130, 246, 0.8); text-decoration: none; font-size: 0.85em;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15,3 21,3 21,9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </div>
+          
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(59, 130, 246, 0.2); font-size: 0.8em; color: rgba(255, 255, 255, 0.5); text-align: center;">
+            All sources accessed and verified on June 25, 2025
+          </div>
+        </div>
+      </div>
+    `
+  },
   "elevenlabs-mobile-app-ios-android-launch": {
     id: 5,
     title: "ElevenLabs Launches Mobile App: AI Voice Generation Now Available on iOS & Android",
@@ -331,7 +628,7 @@ const blogPostsData: Record<string, BlogPostData> = {
           <li><strong>MCP Integration:</strong> Connect to Slack, Linear, Perplexity, Notion and custom tools</li>
           <li><strong>Context Understanding:</strong> Comprehends multi-step workflows and cross-platform data</li>
           <li><strong>5,000+ Voice Options:</strong> Choose from ElevenLabs extensive voice library or clone your own</li>
-          <li><strong>Real-Time Processing:</strong> Ultra-low latency conversations with immediate action execution</li>
+          <li><strong>Real-time Processing:</strong> Ultra-low latency conversations with immediate action execution</li>
           <li><strong>Enterprise Security:</strong> HIPAA compliance and bank-level data protection</li>
         </ul>
 

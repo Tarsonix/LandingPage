@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 6,
+    title: "Google Launches Gemini CLI: Revolutionary Open-Source AI Agent for Developers",
+    excerpt: "Google unveils Gemini CLI, a groundbreaking open-source AI agent that brings Gemini 2.5 Pro directly to your terminal. Discover features, installation, and how it's transforming developer workflows with industry-leading usage limits.",
+    imageUrl: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "June 25, 2025",
+    readTime: "12 min read",
+    slug: "google-gemini-cli-open-source-ai-agent-announcement",
+    featured: true
+  },
+  {
     id: 5,
     title: "ElevenLabs Launches Mobile App: AI Voice Generation Now Available on iOS & Android",
     excerpt: "Discover ElevenLabs' groundbreaking mobile app that brings studio-quality AI voice generation to your smartphone. Learn about features, pricing and how it's revolutionizing content creation on the go.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "June 24, 2025",
     readTime: "8 min read",
     slug: "elevenlabs-mobile-app-ios-android-launch",
-    featured: true
+    featured: false
   },
   {
     id: 4,
