@@ -839,7 +839,7 @@ const blogPostsData: Record<string, BlogPostData> = {
           <div style="display: grid; gap: 16px;">
             <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
               <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">ElevenLabs Mobile App</h3>
-              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official mobile app page with download links, features overview, and getting started guide for iOS and Android platforms.</p>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official mobile app page with download links, features overview and getting started guide for iOS and Android platforms.</p>
               <a href="https://elevenlabs.io/mobile" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 Visit Official Page
                 <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
@@ -849,7 +849,7 @@ const blogPostsData: Record<string, BlogPostData> = {
             </div>
             <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
               <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Eleven v3 Documentation</h3>
-              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Technical documentation for Eleven v3 alpha model, including capabilities, API reference, and implementation examples.</p>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Technical documentation for Eleven v3 alpha model, including capabilities, API reference and implementation examples.</p>
               <a href="https://elevenlabs.io/blog/eleven-v3" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 Read Documentation
                 <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
@@ -1340,7 +1340,7 @@ const blogPostsData: Record<string, BlogPostData> = {
           <div style="display: grid; gap: 16px;">
             <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
               <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Manus Cloud Browser Documentation</h3>
-              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive documentation covering setup, features, security measures, and best practices for Manus Cloud Browser.</p>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive documentation covering setup, features, security measures and best practices for Manus Cloud Browser.</p>
               <a href="https://manus.im/help/cloud-browser" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 View Documentation
                 <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
@@ -1350,7 +1350,7 @@ const blogPostsData: Record<string, BlogPostData> = {
             </div>
             <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
               <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Getting Started Guide</h3>
-              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Step-by-step tutorials, best practices, and troubleshooting resources for implementing Manus Cloud Browser in your workflows.</p>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Step-by-step tutorials, best practices and troubleshooting resources for implementing Manus Cloud Browser in your workflows.</p>
               <a href="https://manus.im/help" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 Access Tutorials
                 <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
@@ -1564,7 +1564,7 @@ const blogPostsData: Record<string, BlogPostData> = {
           <div style="display: grid; gap: 16px;">
             <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
               <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Cursor Slack Integration</h3>
-              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official documentation covering setup, configuration, and best practices for integrating Cursor's Background Agents with Slack.</p>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official documentation covering setup, configuration and best practices for integrating Cursor's Background Agents with Slack.</p>
               <a href="https://docs.cursor.com/slack" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 View Documentation
                 <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
@@ -1574,7 +1574,7 @@ const blogPostsData: Record<string, BlogPostData> = {
             </div>
             <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
               <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Cursor Dashboard</h3>
-              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Access your Cursor dashboard to manage integrations, monitor usage, and configure team settings for Background Agents.</p>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Access your Cursor dashboard to manage integrations, monitor usage and configure team settings for Background Agents.</p>
               <a href="https://cursor.com/dashboard" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 Open Dashboard
                 <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
