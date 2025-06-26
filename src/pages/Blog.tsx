@@ -9,14 +9,24 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 7,
+    title: "Google's Gemma 3n: Revolutionary Mobile-First AI with MatFormer Architecture",
+    excerpt: "Discover Google's groundbreaking Gemma 3n neural network family featuring MatFormer architecture, Per-Layer Embeddings and multimodal capabilities optimized for mobile devices. Learn about the $150,000 Impact Challenge and how to get started.",
+    imageUrl: "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemma3n_Wagtial_RD1-V02.original.jpg",
+    date: "June 27, 2025",
+    readTime: "15 min read",
+    slug: "google-gemma-3n-mobile-first-ai-architecture",
+    featured: true
+  },
+  {
     id: 6,
     title: "Google Launches Gemini CLI: Revolutionary Open-Source AI Agent for Developers",
-    excerpt: "Google unveils Gemini CLI, a groundbreaking open-source AI agent that brings Gemini 2.5 Pro directly to your terminal. Discover features, installation, and how it's transforming developer workflows with industry-leading usage limits.",
+    excerpt: "Google unveils Gemini CLI, a groundbreaking open-source AI agent that brings Gemini 2.5 Pro directly to your terminal. Discover features, installation and how it's transforming developer workflows with industry-leading usage limits.",
     imageUrl: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: "June 25, 2025",
     readTime: "12 min read",
     slug: "google-gemini-cli-open-source-ai-agent-announcement",
-    featured: true
+    featured: false
   },
   {
     id: 5,
