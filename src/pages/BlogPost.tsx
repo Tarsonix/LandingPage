@@ -23,6 +23,273 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "google-gemma-3n-mobile-first-ai-architecture": {
+    id: 7,
+    title: "Google's Gemma 3n: Revolutionary Mobile-First AI with MatFormer Architecture",
+    excerpt: "Discover Google's groundbreaking Gemma 3n neural network family featuring MatFormer architecture, Per-Layer Embeddings and multimodal capabilities optimized for mobile devices. Learn about the $150,000 Impact Challenge and how to get started.",
+    imageUrl: "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemma3n_Wagtial_RD1-V02.original.jpg",
+    date: "June 27, 2025",
+    readTime: "15 min read",
+    slug: "google-gemma-3n-mobile-first-ai-architecture",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>Google's Revolutionary Mobile-First AI Architecture</h2>
+        <p>On June 26, 2025, Google announced the full release of <strong>Gemma 3n</strong>, a groundbreaking mobile-first AI architecture that represents a paradigm shift in neural network design. Following the preview launch in May 2025, this revolutionary neural network family introduces cutting-edge innovations including MatFormer (Matryoshka Transformer) architecture, Per-Layer Embeddings (PLE) and multimodal capabilities specifically optimized for everyday devices like smartphones, tablets and laptops.</p>
+        
+        <p>As Lucas Gonzalez, Product Manager at Google, stated: <em>"Gemma 3n is our first open model built on this groundbreaking, shared architecture, allowing developers to begin experimenting with this technology today"</em>. The same advanced architecture also powers the next generation of Gemini Nano, bringing these capabilities to Google's on-device ecosystem.</p>
+
+        <h2>What Makes Gemma 3n Revolutionary?</h2>
+        <p>Gemma 3n represents a major advancement for on-device AI, bringing powerful multimodal capabilities to edge devices with performance previously only seen in cloud-based frontier models. The model family includes several groundbreaking innovations that set it apart from traditional neural networks.</p>
+
+        <h3>Key Innovations:</h3>
+        <ul>
+          <li><strong>Multimodal by Design:</strong> Natively supports image, audio, video and text inputs with text outputs</li>
+          <li><strong>Mobile-First Architecture:</strong> Engineered specifically for resource-constrained devices</li>
+          <li><strong>MatFormer Architecture:</strong> Novel nested transformer built for elastic inference</li>
+          <li><strong>Per-Layer Embeddings (PLE):</strong> Dramatic memory efficiency improvements</li>
+          <li><strong>KV Cache Sharing:</strong> 2x improvement in prefill performance compared to Gemma 3 4B</li>
+          <li><strong>Universal Speech Model Integration:</strong> Advanced audio processing capabilities</li>
+          <li><strong>MobileNet-V5 Vision Encoder:</strong> State-of-the-art image and video understanding</li>
+        </ul>
+
+        <h2>MatFormer: The Matryoshka Transformer Architecture</h2>
+        <p>At the core of Gemma 3n lies the <strong>MatFormer (Matryoshka Transformer) architecture</strong>, a novel nested transformer built for elastic inference. Like Russian Matryoshka dolls, a larger model contains smaller, fully functional versions of itself, extending the concept of Matryoshka Representation Learning from just embeddings to all transformer components.</p>
+
+        <h3>Model Sizes and Effective Parameters:</h3>
+        <p>Gemma 3n models are available in two sizes based on <strong>effective parameters</strong>:</p>
+        <ul>
+          <li><strong>E2B (Effective 2B):</strong> Raw parameter count of 5B, operates with 2GB memory footprint</li>
+          <li><strong>E4B (Effective 4B):</strong> Raw parameter count of 8B, operates with 3GB memory footprint</li>
+        </ul>
+
+        <p>During MatFormer training of the E4B model, a 2B effective parameter (E2B) sub-model is simultaneously optimized within it. This provides developers with two powerful capabilities:</p>
+
+        <h4>1. Pre-extracted Models</h4>
+        <p>Developers can directly download and use either the main E4B model for highest capabilities, or the standalone E2B sub-model offering up to 2x faster inference.</p>
+
+        <h4>2. Custom Sizes with Mix-n-Match</h4>
+        <p>For granular control tailored to specific hardware constraints, developers can create custom-sized models between E2B and E4B using Google's Mix-n-Match technique. This allows precise parameter slicing by adjusting feed forward network hidden dimensions per layer (from 8192 to 16384) and selectively skipping layers.</p>
+
+        <h2>Per-Layer Embeddings (PLE): Memory Efficiency Revolution</h2>
+        <p>Gemma 3n incorporates <strong>Per-Layer Embeddings (PLE)</strong>, a Google DeepMind innovation that delivers significant RAM usage reduction. This breakthrough is specifically tailored for on-device deployment, dramatically improving model quality without increasing the high-speed memory footprint required on device accelerators.</p>
+
+        <h3>How PLE Works:</h3>
+        <p>PLE parameters are used during model execution to create data that enhances the performance of each model layer. The PLE data can be generated separately, outside the operating memory of the model, cached to fast storage and then added to the model inference process as each layer runs.</p>
+
+        <h3>Memory Efficiency Benefits:</h3>
+        <ul>
+          <li><strong>Reduced VRAM Usage:</strong> Only core transformer weights need to sit in accelerator memory</li>
+          <li><strong>CPU Offloading:</strong> PLE parameters can be loaded and computed efficiently on CPU</li>
+          <li><strong>Dynamic Memory Footprint:</strong> Models operate with memory comparable to much smaller traditional models</li>
+          <li><strong>Quality Preservation:</strong> Maintains model performance while reducing resource consumption</li>
+        </ul>
+
+        <h2>Multimodal Capabilities: Audio, Vision and Text</h2>
+        <p>Gemma 3n features comprehensive multimodal understanding with significant enhancements across audio, vision and text processing capabilities.</p>
+
+        <h3>Audio Understanding with Universal Speech Model</h3>
+        <p>Gemma 3n uses an advanced audio encoder based on the Universal Speech Model (USM). The encoder generates a token for every 160ms of audio (approximately 6 tokens per second), providing granular representation of sound context.</p>
+
+        <h4>Audio Capabilities:</h4>
+        <ul>
+          <li><strong>Automatic Speech Recognition (ASR):</strong> High-quality speech-to-text transcription</li>
+          <li><strong>Automatic Speech Translation (AST):</strong> Translate spoken language into text in another language</li>
+          <li><strong>Multilingual Support:</strong> Strong performance for English, Spanish, French, Italian and Portuguese</li>
+          <li><strong>Streaming Support:</strong> Underlying encoder capable of processing arbitrarily long audio</li>
+        </ul>
+
+        <h3>MobileNet-V5: State-of-the-Art Vision Encoder</h3>
+        <p>Gemma 3n features the new <strong>MobileNet-V5-300M</strong> vision encoder, delivering state-of-the-art performance for multimodal tasks on edge devices.</p>
+
+        <h4>Vision Encoder Features:</h4>
+        <ul>
+          <li><strong>Multiple Input Resolutions:</strong> Native support for 256x256, 512x512 and 768x768 pixels</li>
+          <li><strong>High Throughput:</strong> Processes up to 60 frames per second on Google Pixel</li>
+          <li><strong>Efficiency Gains:</strong> 13x speedup with quantization, 46% fewer parameters, 4x smaller memory footprint</li>
+          <li><strong>Enhanced Accuracy:</strong> Significantly higher accuracy on vision-language tasks compared to baseline models</li>
+        </ul>
+
+        <h2>Performance Benchmarks and Achievements</h2>
+        <p>Gemma 3n delivers exceptional performance across multiple benchmarks, achieving significant milestones in the sub-10B parameter category.</p>
+
+        <h3>LMArena Performance</h3>
+        <p>The E4B version achieves an <strong>LMArena score over 1300</strong>, making it the first model under 10 billion parameters to reach this benchmark. This positions Gemma 3n competitively against much larger proprietary models.</p>
+
+        <h3>Multilingual Capabilities</h3>
+        <p>Gemma 3n supports <strong>140 languages for text</strong> and <strong>multimodal understanding of 35 languages</strong>, with particularly strong performance in Japanese, German, Korean, Spanish and French. The model achieves 50.1% on WMT24++ (ChrF) multilingual benchmarks.</p>
+
+        <h3>Mobile Performance Metrics</h3>
+        <p>On Samsung S25 Ultra with Google AI Edge, Gemma 3n E2B achieves impressive performance metrics:</p>
+        <ul>
+          <li><strong>Prefill Speed:</strong> 163 tokens/sec (CPU), 620 tokens/sec (GPU)</li>
+          <li><strong>Decode Speed:</strong> 17.6 tokens/sec (CPU), 23.3 tokens/sec (GPU)</li>
+          <li><strong>Time to First Token:</strong> 6.7 seconds (CPU), 12.7 seconds (GPU)</li>
+          <li><strong>Model Size:</strong> 2991 MB with dynamic_int4 quantization</li>
+          <li><strong>Memory Usage:</strong> 2704 MB peak RSS (CPU), 3408 MB (GPU)</li>
+        </ul>
+
+        <h2>Developer Ecosystem and Tooling Support</h2>
+        <p>Google has prioritized broad ecosystem support for Gemma 3n from day one, partnering with leading open source developers and platforms.</p>
+
+        <h3>Supported Platforms and Tools:</h3>
+        <ul>
+          <li><strong>Cloud Platforms:</strong> Google AI Studio, Vertex AI, Google Cloud Run</li>
+          <li><strong>Development Frameworks:</strong> Hugging Face Transformers, TRL, NVIDIA NeMo Framework</li>
+          <li><strong>On-Device Tools:</strong> Google AI Edge, Ollama, MLX, llama.cpp, LiteRT-LLM</li>
+          <li><strong>Deployment Options:</strong> Docker, transformers.js, SGLang, vLLM, NVIDIA API Catalog</li>
+          <li><strong>Fine-tuning Tools:</strong> Unsloth, LMStudio, Axolotl</li>
+        </ul>
+
+        <h3>Getting Started with Gemma 3n</h3>
+        <p>Developers can begin experimenting with Gemma 3n through multiple access points:</p>
+
+        <h4>Immediate Access:</h4>
+        <ul>
+          <li><strong>Google AI Studio:</strong> Try Gemma 3n directly in browser with no setup required</li>
+          <li><strong>Model Downloads:</strong> Available on Hugging Face and Kaggle</li>
+          <li><strong>Documentation:</strong> Comprehensive guides for inference and fine-tuning</li>
+        </ul>
+
+        <h4>Installation Example:</h4>
+        <div style="background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; padding: 16px; margin: 20px 0;">
+          <p><strong>Using Ollama:</strong></p>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">ollama run gemma3n:2b</code><br/>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">ollama run gemma3n:4b</code>
+        </div>
+
+        <h2>The $150,000 Gemma 3n Impact Challenge</h2>
+        <p>Google has launched the <strong>Gemma 3n Impact Challenge</strong> with $150,000 in prizes to encourage developers to build products that make a positive impact on the world.</p>
+
+        <h3>Challenge Requirements:</h3>
+        <ul>
+          <li><strong>Use Gemma 3n's unique capabilities:</strong> On-device, offline and multimodal features</li>
+          <li><strong>Real-world impact:</strong> Build products that solve meaningful problems</li>
+          <li><strong>Compelling demonstration:</strong> Create a "wow" factor demo with video story</li>
+          <li><strong>Innovation focus:</strong> Leverage Gemma 3n's mobile-first architecture advantages</li>
+        </ul>
+
+        <h2>Technical Architecture Deep Dive</h2>
+        <p>Gemma 3n's architecture represents a fundamental rethinking of neural network design for mobile and edge deployment.</p>
+
+        <h3>Parameter Organization</h3>
+        <p>Gemma 3n parameters are divided into four main groups:</p>
+        <ul>
+          <li><strong>Text Parameters:</strong> Core language modeling capabilities</li>
+          <li><strong>Visual Parameters:</strong> Image and video understanding</li>
+          <li><strong>Audio Parameters:</strong> Speech recognition and translation</li>
+          <li><strong>Per-Layer Embedding (PLE) Parameters:</strong> Memory-efficient enhancement data</li>
+        </ul>
+
+        <h3>Conditional Parameter Loading</h3>
+        <p>Developers can skip loading specific parameter groups (audio or visual) to reduce memory load, with dynamic loading at runtime if device resources permit. This enables execution on wider range of devices and allows resource efficiency optimization for less demanding tasks.</p>
+
+        <h3>KV Cache Sharing Innovation</h3>
+        <p>Gemma 3n introduces KV Cache Sharing for long-context processing, essential for multimodal applications with audio and video streams. The keys and values from middle layers are directly shared with top layers, delivering 2x improvement in prefill performance.</p>
+
+        <h2>Industry Impact and Competitive Landscape</h2>
+        <p>Gemma 3n's launch represents a significant shift in the AI landscape, particularly for mobile and edge computing applications.</p>
+
+        <h3>Market Positioning</h3>
+        <p>With over 160 million collective downloads across the Gemma family, Google has established a strong foundation in the open-source AI ecosystem. Gemma 3n builds on this momentum by specifically targeting the growing mobile AI market.</p>
+
+        <h3>Hardware Partnerships</h3>
+        <p>Google developed Gemma 3n in close collaboration with mobile hardware leaders including:</p>
+        <ul>
+          <li><strong>Qualcomm Technologies:</strong> Snapdragon chip optimization</li>
+          <li><strong>MediaTek:</strong> Mobile processor integration</li>
+          <li><strong>Samsung System LSI:</strong> On-device AI acceleration</li>
+        </ul>
+
+        <h2>Use Cases and Applications</h2>
+        <p>Gemma 3n's mobile-first design enables a new wave of intelligent, on-device applications across various domains.</p>
+
+        <h3>Real-World Applications:</h3>
+        <ul>
+          <li><strong>Live Interactive Experiences:</strong> Real-time visual and auditory understanding</li>
+          <li><strong>Privacy-First AI:</strong> Sensitive data processing without cloud connectivity</li>
+          <li><strong>Multilingual Communication:</strong> Real-time speech translation and transcription</li>
+          <li><strong>Accessibility Tools:</strong> Enhanced communication for hearing-impaired users</li>
+          <li><strong>Content Creation:</strong> On-device video analysis and generation</li>
+          <li><strong>Educational Applications:</strong> Interactive learning with multimodal understanding</li>
+        </ul>
+
+        <h2>Future Roadmap and Elastic Execution</h2>
+        <p>While not part of the current implementation, the MatFormer architecture paves the way for <strong>elastic execution</strong> capabilities. This future feature will allow a single deployed E4B model to dynamically switch between E4B and E2B inference paths on the fly, enabling real-time optimization of performance and memory usage based on current task and device load.</p>
+
+        <h3>Upcoming Features:</h3>
+        <ul>
+          <li><strong>Long-form Audio Processing:</strong> Extended audio stream support beyond 30-second clips</li>
+          <li><strong>Enhanced Streaming:</strong> Low-latency, long streaming applications</li>
+          <li><strong>Expanded Multimodal Integration:</strong> Improved interleaved input processing</li>
+          <li><strong>Community Extensions:</strong> Additional MCP server integrations</li>
+        </ul>
+
+        <h2>Installation and Getting Started Guide</h2>
+        <p>Getting started with Gemma 3n is straightforward across multiple platforms and deployment options.</p>
+
+        <h3>Quick Start Options:</h3>
+
+        <h4>1. Google AI Studio (No Setup Required)</h4>
+        <p>Try Gemma 3n directly in your browser at <a href="https://ai.google.dev/gemma/docs/gemma-3n" target="_blank">Google AI Studio</a> with no local installation needed.</p>
+
+        <h4>2. Hugging Face Transformers</h4>
+        <div style="background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; padding: 16px; margin: 20px 0;">
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">pip install transformers torch</code><br/>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">from transformers import AutoTokenizer, AutoModelForCausalLM</code><br/>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">model = AutoModelForCausalLM.from_pretrained("google/gemma-3n-E2B-it")</code>
+        </div>
+
+        <h4>3. Ollama Installation</h4>
+        <div style="background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; padding: 16px; margin: 20px 0;">
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">curl -fsSL https://ollama.com/install.sh | sh</code><br/>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">ollama pull gemma3n:2b</code><br/>
+          <code style="background: rgba(0, 0, 0, 0.3); padding: 2px 6px; border-radius: 4px;">ollama run gemma3n:2b</code>
+        </div>
+
+        <h4>4. Google AI Edge for Mobile</h4>
+        <p>For on-device mobile deployment, use Google AI Edge tools and libraries with support for Android and iOS platforms.</p>
+
+        <h2>Conclusion: The Future of Mobile AI</h2>
+        <p>Google's Gemma 3n represents a watershed moment in mobile AI development, combining breakthrough architectural innovations with practical deployment considerations. The MatFormer architecture, Per-Layer Embeddings and comprehensive multimodal capabilities position Gemma 3n as a foundational technology for the next generation of intelligent mobile applications.</p>
+
+        <p>With its mobile-first design philosophy, extensive ecosystem support and the $150,000 Impact Challenge encouraging real-world applications, Gemma 3n is poised to democratize access to advanced AI capabilities on everyday devices. As Omar Sanseviero, Staff Developer Relations Engineer at Google, noted: <em>"The true power of this technology is in what you will build with it"</em>.</p>
+
+        <p>For developers looking to build the next generation of AI-powered mobile applications, Gemma 3n provides the tools, performance and flexibility needed to create truly innovative solutions that respect user privacy while delivering exceptional experiences.</p>
+
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Introducing Gemma 3n: The Developer Guide</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive technical documentation covering MatFormer architecture, Per-Layer Embeddings and multimodal capabilities from Google's official developer blog.</p>
+              <a href="https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Read Full Guide
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Gemma 3n Model Overview</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official model documentation with technical specifications, benchmarks and implementation details from Google AI for Developers.</p>
+              <a href="https://ai.google.dev/gemma/docs/gemma-3n" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Documentation
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  },
   "google-gemini-cli-open-source-ai-agent-announcement": {
     id: 6,
     title: "Google Launches Gemini CLI: Revolutionary Open-Source AI Agent for Developers",
@@ -257,64 +524,34 @@ const blogPostsData: Record<string, BlogPostData> = {
 
         <p>The future of development is here and it's open source. Get started with Gemini CLI today and experience the next generation of AI-assisted development.</p>
 
-        <div style="margin: 60px 0 40px 0; padding: 32px; background: rgba(59, 130, 246, 0.05); border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.2);">
-          <h3 style="margin-bottom: 24px; color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
             </svg>
-            References & Sources
-          </h3>
-          <div style="space-y: 16px;">
-            <div style="padding: 16px; background: rgba(0, 0, 0, 0.2); border-radius: 8px; border-left: 4px solid rgba(59, 130, 246, 0.6); margin-bottom: 16px;">
-              <div style="font-weight: 600; color: rgba(255, 255, 255, 0.9); margin-bottom: 4px;">
-                Google Official Announcement
-              </div>
-              <div style="font-size: 0.9em; color: rgba(255, 255, 255, 0.7); margin-bottom: 8px;">
-                <em>Gemini CLI: your open-source AI agent</em> - The Keyword Blog
-              </div>
-              <div style="font-size: 0.85em; color: rgba(255, 255, 255, 0.6);">
-                Published: June 25, 2025
-              </div>
-              <a href="https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 style="display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; color: rgba(59, 130, 246, 0.8); text-decoration: none; font-size: 0.85em; hover: color: rgba(59, 130, 246, 1);">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15,3 21,3 21,9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Google Official Announcement</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official announcement from Google's The Keyword Blog introducing Gemini CLI as an open-source AI agent for developers.</p>
+              <a href="https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Read Full Announcement
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
                 </svg>
-                View Source
               </a>
             </div>
-            
-            <div style="padding: 16px; background: rgba(0, 0, 0, 0.2); border-radius: 8px; border-left: 4px solid rgba(59, 130, 246, 0.6);">
-              <div style="font-weight: 600; color: rgba(255, 255, 255, 0.9); margin-bottom: 4px;">
-                GitHub Repository
-              </div>
-              <div style="font-size: 0.9em; color: rgba(255, 255, 255, 0.7); margin-bottom: 8px;">
-                <em>google-gemini/gemini-cli: An open-source AI agent</em> - Official Repository
-              </div>
-              <div style="font-size: 0.85em; color: rgba(255, 255, 255, 0.6);">
-                Stars: 10.4k+ | Forks: 628+ | License: Apache 2.0
-              </div>
-              <a href="https://github.com/google-gemini/gemini-cli" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 style="display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; color: rgba(59, 130, 246, 0.8); text-decoration: none; font-size: 0.85em;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15,3 21,3 21,9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">GitHub Repository</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official open-source repository containing Gemini CLI source code, documentation and community contributions.</p>
+              <a href="https://github.com/google-gemini/gemini-cli" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 View Repository
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
               </a>
             </div>
-          </div>
-          
-          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(59, 130, 246, 0.2); font-size: 0.8em; color: rgba(255, 255, 255, 0.5); text-align: center;">
-            All sources accessed and verified on June 25, 2025
           </div>
         </div>
       </div>
@@ -592,14 +829,36 @@ const blogPostsData: Record<string, BlogPostData> = {
 
         <p><em>Ready to revolutionize your content creation? Download the ElevenLabs mobile app today from the <a href="https://apps.apple.com/app/elevenlabs" target="_blank" rel="noopener noreferrer">App Store</a> or <a href="https://play.google.com/store/apps/details?id=io.elevenlabs.coreapp" target="_blank" rel="noopener noreferrer">Google Play Store</a> and experience the future of AI voice generation on mobile.</em></p>
 
-        <h2>Additional Resources</h2>
-        <ul>
-          <li><strong>Official App Page:</strong> <a href="https://elevenlabs.io/mobile" target="_blank" rel="noopener noreferrer">elevenlabs.io/mobile</a></li>
-          <li><strong>Eleven v3 Documentation:</strong> <a href="https://elevenlabs.io/blog/eleven-v3" target="_blank" rel="noopener noreferrer">elevenlabs.io/blog/eleven-v3</a></li>
-          <li><strong>Voice Cloning Guide:</strong> <a href="https://elevenlabs.io/voice-cloning" target="_blank" rel="noopener noreferrer">elevenlabs.io/voice-cloning</a></li>
-          <li><strong>Support Center:</strong> Technical support and tutorials for mobile app usage</li>
-          <li><strong>Creator Community:</strong> Connect with other creators using ElevenLabs mobile</li>
-        </ul>
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">ElevenLabs Mobile App</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official mobile app page with download links, features overview, and getting started guide for iOS and Android platforms.</p>
+              <a href="https://elevenlabs.io/mobile" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Visit Official Page
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Eleven v3 Documentation</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Technical documentation for Eleven v3 alpha model, including capabilities, API reference, and implementation examples.</p>
+              <a href="https://elevenlabs.io/blog/eleven-v3" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Read Documentation
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     `
   },
@@ -1071,14 +1330,36 @@ const blogPostsData: Record<string, BlogPostData> = {
 
         <p><em>Ready to transform your web automation workflows? Explore Manus Cloud Browser today and discover how AI-powered automation can revolutionize your business processes.</em></p>
 
-        <h2>Additional Resources</h2>
-        <ul>
-          <li><strong>Official Documentation:</strong> <a href="https://manus.im/help/cloud-browser" target="_blank" rel="noopener noreferrer">manus.im/help/cloud-browser</a></li>
-          <li><strong>Getting Started Guide:</strong> Comprehensive tutorials and best practices</li>
-          <li><strong>Community Forum:</strong> Connect with other users and share experiences</li>
-          <li><strong>Support Center:</strong> Technical support and troubleshooting resources</li>
-          <li><strong>Security Whitepaper:</strong> Detailed information about security measures and compliance</li>
-        </ul>
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Manus Cloud Browser Documentation</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive documentation covering setup, features, security measures, and best practices for Manus Cloud Browser.</p>
+              <a href="https://manus.im/help/cloud-browser" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Documentation
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Getting Started Guide</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Step-by-step tutorials, best practices, and troubleshooting resources for implementing Manus Cloud Browser in your workflows.</p>
+              <a href="https://manus.im/help" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Access Tutorials
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     `
   },
@@ -1273,13 +1554,36 @@ const blogPostsData: Record<string, BlogPostData> = {
 
         <p>The question isn't whether AI will transform software development, it's whether your team will be ready to harness its full potential. Cursor's Slack integration offers a practical, powerful way to begin that transformation today.</p>
 
-        <h2>Additional Resources</h2>
-        <ul>
-          <li><strong>Official Documentation:</strong> <a href="https://docs.cursor.com/slack" target="_blank" rel="noopener noreferrer">docs.cursor.com/slack</a></li>
-          <li><strong>Setup Guide:</strong> <a href="https://cursor.com/dashboard" target="_blank" rel="noopener noreferrer">cursor.com/dashboard</a></li>
-          <li><strong>Community Forum:</strong> Join the Cursor community for tips, tricks and best practices</li>
-          <li><strong>Support:</strong> Contact Cursor support for enterprise implementation assistance</li>
-        </ul>
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Cursor Slack Integration</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official documentation covering setup, configuration, and best practices for integrating Cursor's Background Agents with Slack.</p>
+              <a href="https://docs.cursor.com/slack" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Documentation
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Cursor Dashboard</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Access your Cursor dashboard to manage integrations, monitor usage, and configure team settings for Background Agents.</p>
+              <a href="https://cursor.com/dashboard" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Open Dashboard
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
         <p><em>Ready to revolutionize your development workflow? Start your free trial of Cursor's Slack integration today and experience the future of AI-powered team collaboration.</em></p>
       </div>`
