@@ -23,6 +23,170 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "cursor-mobile-web-ai-code-editor-launch": {
+    id: 9,
+    title: "Cursor Goes Mobile: Revolutionary AI Code Editor Now Available on Web and Mobile Devices",
+    excerpt: "Cursor breaks new ground by bringing its powerful AI coding assistant to web browsers and mobile devices. Discover how this game-changing release transforms development workflows with background agents, cross-device collaboration and seamless handoff between desktop and mobile.",
+    imageUrl: "https://images.unsplash.com/photo-1599709564204-bd5a535f739b?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "July 1, 2025",
+    readTime: "10 min read",
+    slug: "cursor-mobile-web-ai-code-editor-launch",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>Cursor Breaks the Desktop Barrier: AI Coding Goes Mobile</h2>
+        <p>In a groundbreaking move that redefines the boundaries of AI-powered development, <strong>Cursor has officially launched its web and mobile platform</strong>, bringing the revolutionary AI code editor to smartphones, tablets and web browsers worldwide. This historic release, announced on June 30, 2025, marks the first time developers can access Cursor's powerful AI agents anywhere, anytime, fundamentally transforming how we think about coding workflows.</p>
+        
+        <p>The launch represents a seismic shift in the developer tools landscape, where traditional IDEs have been confined to desktop environments. Cursor's web and mobile platform breaks this paradigm by enabling developers to initiate complex coding tasks, review pull requests and collaborate with AI agents directly from their mobile devices.</p>
+
+        <h2>Revolutionary Features That Change Everything</h2>
+        <p>Cursor's mobile and web platform introduces several game-changing capabilities that set it apart from any existing developer tool:</p>
+
+        <h3>Background Agents: Code While You Sleep</h3>
+        <p>The standout feature of Cursor's mobile platform is its <strong>Background Agents</strong> system. These AI-powered agents can run complex coding tasks asynchronously while you're away from your desk. Whether you're commuting, in a meeting, or taking a break, you can:</p>
+        
+        <ul>
+          <li><strong>Launch bug fixes</strong> with simple natural language commands</li>
+          <li><strong>Build new features</strong> from high-level specifications</li>
+          <li><strong>Answer complex codebase questions</strong> with full context awareness</li>
+          <li><strong>Generate documentation</strong> and code reviews automatically</li>
+        </ul>
+
+        <h3>Universal Platform Support</h3>
+        <p>Cursor's web platform works seamlessly across all major platforms:</p>
+        
+        <ul>
+          <li><strong>Desktop browsers:</strong> Chrome, Firefox, Safari, Edge</li>
+          <li><strong>Mobile browsers:</strong> iOS Safari android Chrome</li>
+          <li><strong>Progressive Web App (PWA):</strong> Native app experience on iOS and Android</li>
+          <li><strong>Tablet optimization:</strong> Full-featured interface for iPad and Android tablets</li>
+        </ul>
+
+        <h3>Seamless Cross-Device Collaboration</h3>
+        <p>The platform enables unprecedented collaboration capabilities:</p>
+        
+        <ul>
+          <li><strong>Team access:</strong> Share agent runs with team members who have repository access</li>
+          <li><strong>Real-time review:</strong> Review agent diffs and provide feedback directly from mobile</li>
+          <li><strong>Pull request management:</strong> Create, review and merge pull requests from the web interface</li>
+          <li><strong>Rich context sharing:</strong> Include images, detailed instructions and run multiple agents in parallel</li>
+        </ul>
+
+        <h2>The Technology Behind the Magic</h2>
+        <p>Cursor's mobile and web platform leverages cutting-edge cloud infrastructure to deliver desktop-quality AI assistance on any device. The system architecture includes:</p>
+
+        <h3>Cloud-Native Agent Execution</h3>
+        <p>Unlike traditional mobile development tools that compromise on functionality, Cursor's agents run in powerful cloud environments with full access to:</p>
+        
+        <ul>
+          <li><strong>Complete codebase context:</strong> Full repository indexing and analysis</li>
+          <li><strong>Advanced AI models:</strong> Claude Sonnet 4, GPT-4.1, Gemini 2.5 Pro and more</li>
+          <li><strong>Development tools:</strong> Compilers, linters, testing frameworks</li>
+          <li><strong>Git operations:</strong> Branch management, commits and pull requests</li>
+        </ul>
+
+        <h3>Progressive Web App Excellence</h3>
+        <p>The PWA implementation provides native app-like experiences:</p>
+        
+        <ul>
+          <li><strong>Offline capability:</strong> View previous agent runs without internet</li>
+          <li><strong>Push notifications:</strong> Get notified when agents complete tasks</li>
+          <li><strong>Home screen installation:</strong> One-tap access from device home screens</li>
+          <li><strong>Full-screen interface:</strong> Immersive coding experience on mobile</li>
+        </ul>
+
+        <h2>Slack Integration: The Ultimate Workflow Enhancement</h2>
+        <p>Cursor's mobile platform includes deep Slack integration that revolutionizes team development workflows:</p>
+        
+        <ul>
+          <li><strong>@Cursor mentions:</strong> Trigger agents directly from Slack conversations</li>
+          <li><strong>Completion notifications:</strong> Receive updates when tasks finish</li>
+          <li><strong>Team coordination:</strong> Share agent results and collaborate in channels</li>
+          <li><strong>Context preservation:</strong> Maintain conversation history across platforms</li>
+        </ul>
+
+        <h2>Getting Started: Your First Mobile Coding Session</h2>
+        <p>Setting up Cursor on mobile and web is remarkably straightforward:</p>
+
+        <h3>Quick Setup Process</h3>
+        <ol>
+          <li><strong>Visit cursor.com/agents</strong> on any device</li>
+          <li><strong>Sign in</strong> with your existing Cursor account</li>
+          <li><strong>Connect GitHub</strong> to access your repositories</li>
+          <li><strong>Start your first agent</strong> with a simple task description</li>
+        </ol>
+
+        <h3>PWA Installation</h3>
+        <p>For the optimal mobile experience:</p>
+        
+        <ul>
+          <li><strong>iOS:</strong> Open cursor.com/agents in Safari → Tap Share → "Add to Home Screen"</li>
+          <li><strong>Android:</strong> Open in Chrome → Tap Menu → "Add to Home Screen" or "Install App"</li>
+        </ul>
+
+        <h2>Pricing and Accessibility</h2>
+        <p>Cursor's mobile and web platform uses the same pricing model as Background Agents, with compute currently free and charges only for AI model usage. This approach makes advanced AI coding assistance accessible to developers at all levels:</p>
+        
+        <ul>
+          <li><strong>Hobby Plan:</strong> Free with limited agent requests</li>
+          <li><strong>Pro Plan:</strong> $20/month with unlimited agent requests</li>
+          <li><strong>Ultra Plan:</strong> $200/month with 20x usage on premium models</li>
+          <li><strong>Team Plans:</strong> Starting at $40/user/month with advanced collaboration features</li>
+        </ul>
+
+        <h2>Industry Impact and Developer Response</h2>
+        <p>The developer community has responded enthusiastically to Cursor's mobile launch. Early adopters report significant productivity gains from being able to initiate coding tasks during commutes and review agent work during breaks.</p>
+
+        <blockquote>
+          <p>"The Cursor Agent on the web gives you a powerful coding assistant wherever you work. When you're back on your laptop, pick up the agent's work in Cursor to review the changes, add follow-up instructions, or directly make edits inline."</p>
+          <footer>— Team Cursor</footer>
+        </blockquote>
+
+        <h2>The Future of Mobile Development</h2>
+        <p>Cursor's mobile and web launch signals a fundamental shift toward platform-agnostic development tools. As AI agents become more sophisticated, the traditional boundaries between desktop and mobile development environments will continue to blur.</p>
+
+        <p>This release positions Cursor at the forefront of the next generation of developer tools, where AI assistance is available everywhere developers work, think and collaborate.</p>
+
+        <h2>Conclusion: A New Era of Coding Freedom</h2>
+        <p>Cursor's mobile and web platform represents more than just a feature expansion, it's a complete reimagining of how developers interact with AI-powered coding tools. By breaking free from desktop constraints, Cursor has created a truly flexible development environment that adapts to modern work patterns.</p>
+
+        <p>Whether you're debugging code during a coffee break, reviewing pull requests on the train, or collaborating with team members across time zones, Cursor's mobile platform ensures your AI coding assistant is always within reach.</p>
+
+        <p><strong>Ready to experience the future of mobile coding?</strong> Visit <a href="https://cursor.com/agents" target="_blank" rel="noopener noreferrer">cursor.com/agents</a> and start your first mobile coding session today.</p>
+
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Cursor on Web and Mobile - Official Announcement</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official announcement from the Cursor team detailing the launch of web and mobile platforms, featuring Background Agents and cross-device collaboration capabilities.</p>
+              <a href="https://www.cursor.com/blog/agent-web" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Read Official Announcement
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Web & Mobile Agent Documentation</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive technical documentation covering setup, features, and implementation details for Cursor's web and mobile agent platform.</p>
+              <a href="https://docs.cursor.com/get-started/web-and-mobile-agent" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Documentation
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  },
   "elevenlabs-nextjs-audio-starter-kit-open-source": {
     id: 8,
     title: "ElevenLabs Launches Next.js Audio Starter Kit: Open-Source Template for AI Voice Applications",
@@ -31,7 +195,7 @@ const blogPostsData: Record<string, BlogPostData> = {
     date: "June 30, 2025",
     readTime: "12 min read",
     slug: "elevenlabs-nextjs-audio-starter-kit-open-source",
-    featured: true,
+    featured: false,
     content: `
       <div class="prose prose-invert prose-blue max-w-none">
         <h2>ElevenLabs Revolutionizes AI Audio Development with Next.js Starter Kit</h2>
