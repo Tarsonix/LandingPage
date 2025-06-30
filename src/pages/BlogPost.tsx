@@ -23,6 +23,483 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "elevenlabs-nextjs-audio-starter-kit-open-source": {
+    id: 8,
+    title: "ElevenLabs Launches Next.js Audio Starter Kit: Open-Source Template for AI Voice Applications",
+    excerpt: "Discover ElevenLabs' revolutionary open-source Next.js Audio Starter Kit featuring Text to Speech, Speech to Text, Sound Effects and Conversational AI. Built with modern tech stack including shadcn/ui and Tailwind CSS v4.",
+    imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "June 30, 2025",
+    readTime: "12 min read",
+    slug: "elevenlabs-nextjs-audio-starter-kit-open-source",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>ElevenLabs Revolutionizes AI Audio Development with Next.js Starter Kit</h2>
+        <p>ElevenLabs has launched a groundbreaking <strong>open-source Next.js Audio Starter Kit</strong> that dramatically simplifies the integration of AI-powered audio features into web applications. This comprehensive template brings together cutting-edge audio technologies including Text to Speech, Speech to Text, Sound Effects and Conversational AI in a single, developer-friendly package.</p>
+        
+        <p>The starter kit represents a significant milestone in making advanced AI audio capabilities accessible to developers of all skill levels. Built with modern web technologies including Next.js 15, shadcn/ui and Tailwind CSS v4, it provides a robust foundation for creating sophisticated voice-enabled applications.</p>
+
+        <h2>Core Features and Capabilities</h2>
+        <p>The ElevenLabs Next.js Audio Starter Kit comes packed with powerful features that address the most common AI audio development needs:</p>
+
+        <h3>Comprehensive Audio Processing Suite</h3>
+        <ul>
+          <li><strong>Text to Speech (TTS):</strong> High-quality voice synthesis with multiple voice options and languages</li>
+          <li><strong>Speech to Text (STT):</strong> Accurate transcription capabilities for voice input processing</li>
+          <li><strong>Sound Effects Generation:</strong> AI-powered creation of custom audio effects and ambient sounds</li>
+          <li><strong>Conversational AI:</strong> Real-time voice interactions with intelligent response generation</li>
+        </ul>
+
+        <h3>Modern Technology Stack</h3>
+        <p>The starter kit leverages the latest web development technologies to ensure optimal performance and developer experience:</p>
+        <ul>
+          <li><strong>Next.js 15:</strong> Latest version with App Router, Server Components and enhanced performance</li>
+          <li><strong>React 19:</strong> Cutting-edge React features including concurrent rendering and improved Suspense</li>
+          <li><strong>TypeScript:</strong> Full type safety and enhanced developer productivity</li>
+          <li><strong>shadcn/ui:</strong> Beautiful, accessible UI components built on Radix UI</li>
+          <li><strong>Tailwind CSS v4:</strong> Latest version with improved performance and new features</li>
+          <li><strong>ElevenLabs SDK:</strong> Official JavaScript SDK for seamless API integration</li>
+        </ul>
+
+        <h2>Real-World Applications and Use Cases</h2>
+        <p>The versatility of the ElevenLabs Next.js Audio Starter Kit opens up numerous possibilities for innovative applications across various industries:</p>
+
+        <h3>Content Creation and Media</h3>
+        <ul>
+          <li><strong>Podcast Platforms:</strong> Automated transcript generation and voice synthesis for podcast previews</li>
+          <li><strong>Video Production:</strong> AI-generated voiceovers and sound effects for content creators</li>
+          <li><strong>Audiobook Creation:</strong> Converting written content to high-quality audio narration</li>
+          <li><strong>Language Learning:</strong> Interactive pronunciation guides and conversation practice</li>
+        </ul>
+
+        <h3>Business and Enterprise Applications</h3>
+        <ul>
+          <li><strong>Customer Service:</strong> Voice-enabled chatbots and automated support systems</li>
+          <li><strong>Accessibility Tools:</strong> Screen readers and voice navigation for visually impaired users</li>
+          <li><strong>Meeting Transcription:</strong> Real-time meeting notes and action item extraction</li>
+          <li><strong>Voice Commerce:</strong> Voice-activated shopping and product search capabilities</li>
+        </ul>
+
+        <h3>Gaming and Entertainment</h3>
+        <ul>
+          <li><strong>Interactive Storytelling:</strong> Dynamic voice narration that adapts to player choices</li>
+          <li><strong>Character Voice Generation:</strong> Unique voices for NPCs and game characters</li>
+          <li><strong>Sound Design:</strong> Procedural audio effects and ambient soundscapes</li>
+          <li><strong>Voice Commands:</strong> Hands-free game controls and navigation</li>
+        </ul>
+
+        <h2>Technical Architecture and Implementation</h2>
+        <p>The starter kit is architected with scalability and maintainability in mind, following modern React and Next.js best practices.</p>
+
+        <h3>Component Structure</h3>
+        <p>The application is organized into logical components that handle specific audio functionalities:</p>
+        
+        <div style="background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; padding: 16px; margin: 20px 0;">
+          <p><strong>Key Components:</strong></p>
+          <ul style="margin: 0;">
+            <li><code>ConversationComponent</code> - Handles real-time voice conversations</li>
+            <li><code>TextToSpeechWidget</code> - Manages TTS functionality</li>
+            <li><code>SpeechToTextProcessor</code> - Processes voice input and transcription</li>
+            <li><code>SoundEffectsGenerator</code> - Creates and manages audio effects</li>
+          </ul>
+        </div>
+
+        <h3>ElevenLabs Conversational AI Integration</h3>
+        <p>One of the standout features is the seamless integration with ElevenLabs' Conversational AI platform, which enables sophisticated voice interactions.</p>
+
+        <h4>Setting Up Conversational AI</h4>
+        <p>The starter kit includes pre-configured components for establishing voice conversations:</p>
+
+        <div style="background: rgba(17, 24, 39, 0.8); padding: 20px; border-radius: 8px; margin: 20px 0; overflow-x: auto;">
+          <pre style="margin: 0; color: #e5e7eb; font-family: 'Fira Code', monospace; font-size: 14px;"><code>'use client';
+
+import { useConversation } from '@elevenlabs/react';
+import { useCallback } from 'react';
+
+export function ConversationComponent() {
+  const conversation = useConversation({
+    onConnect: () => console.log('Connected'),
+    onDisconnect: () => console.log('Disconnected'),
+    onMessage: (message) => console.log('Message:', message),
+    onError: (error) => console.error('Error:', error),
+  });
+
+  const startConversation = useCallback(async () => {
+    try {
+      await navigator.mediaDevices.getUserMedia({ audio: true });
+      
+      await conversation.startSession({
+        agentId: 'YOUR_AGENT_ID',
+      });
+    } catch (error) {
+      console.error('Failed to start conversation:', error);
+    }
+  }, [conversation]);
+
+  return (
+    &lt;div className="conversation-interface"&gt;
+      &lt;button onClick={startConversation}&gt;
+        Start Voice Conversation
+      &lt;/button&gt;
+      &lt;p&gt;Status: {conversation.status}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+        </div>
+
+        <h3>WebSocket Implementation for Real-Time Audio</h3>
+        <p>The starter kit implements WebSocket connections for low-latency audio streaming, essential for conversational AI applications.</p>
+
+        <h4>Real-Time Audio Processing</h4>
+        <ul>
+          <li><strong>Streaming Audio Input:</strong> Continuous microphone capture with noise reduction</li>
+          <li><strong>Real-Time Transcription:</strong> Live speech-to-text conversion as users speak</li>
+          <li><strong>Instant Voice Responses:</strong> Sub-second latency for natural conversation flow</li>
+          <li><strong>Audio Quality Optimization:</strong> Automatic bitrate adjustment based on connection quality</li>
+        </ul>
+
+        <h2>Installation and Setup Guide</h2>
+        <p>Getting started with the ElevenLabs Next.js Audio Starter Kit is straightforward, with comprehensive documentation and examples provided.</p>
+
+        <h3>Prerequisites</h3>
+        <ul>
+          <li>Node.js 18+ installed on your system</li>
+          <li>ElevenLabs API key (free tier available)</li>
+          <li>Basic knowledge of React and Next.js</li>
+        </ul>
+
+        <h3>Quick Start Installation</h3>
+        <div style="background: rgba(17, 24, 39, 0.8); padding: 20px; border-radius: 8px; margin: 20px 0; overflow-x: auto;">
+          <pre style="margin: 0; color: #e5e7eb; font-family: 'Fira Code', monospace; font-size: 14px;"><code># Clone the repository
+git clone https://git.new/elevenlabs-nextjs
+
+# Navigate to project directory
+cd elevenlabs-nextjs-starter
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+
+# Start development server
+npm run dev</code></pre>
+        </div>
+
+        <h3>Environment Configuration</h3>
+        <p>The starter kit requires minimal configuration to get up and running:</p>
+
+        <div style="background: rgba(17, 24, 39, 0.8); padding: 20px; border-radius: 8px; margin: 20px 0; overflow-x: auto;">
+          <pre style="margin: 0; color: #e5e7eb; font-family: 'Fira Code', monospace; font-size: 14px;"><code># .env.local
+ELEVENLABS_API_KEY=your_api_key_here
+NEXT_PUBLIC_AGENT_ID=your_agent_id_here</code></pre>
+        </div>
+
+        <h2>Advanced Configuration and Customization</h2>
+        <p>The starter kit provides extensive customization options for advanced use cases and specific requirements.</p>
+
+        <h3>Voice Selection and Customization</h3>
+        <p>Developers can easily integrate custom voices and fine-tune audio parameters:</p>
+
+        <div style="background: rgba(17, 24, 39, 0.8); padding: 20px; border-radius: 8px; margin: 20px 0; overflow-x: auto;">
+          <pre style="margin: 0; color: #e5e7eb; font-family: 'Fira Code', monospace; font-size: 14px;"><code>const voiceSettings = {
+  stability: 0.75,
+  similarity_boost: 0.85,
+  style: 0.2,
+  use_speaker_boost: true
+};
+
+const generateSpeech = async (text: string) => {
+  const audio = await elevenlabs.generate({
+    voice: "Bella",
+    text: text,
+    model_id: "eleven_multilingual_v2",
+    voice_settings: voiceSettings
+  });
+  
+  return audio;
+};</code></pre>
+        </div>
+
+        <h3>Multi-Language Support</h3>
+        <p>The starter kit includes built-in support for multiple languages, leveraging ElevenLabs' multilingual capabilities:</p>
+        <ul>
+          <li><strong>29 Supported Languages:</strong> Including English, Spanish, French, German, Italian, Portuguese and more</li>
+          <li><strong>Automatic Language Detection:</strong> Smart detection of input language for appropriate voice selection</li>
+          <li><strong>Cross-Language Voice Cloning:</strong> Ability to use the same voice across different languages</li>
+          <li><strong>Regional Accent Support:</strong> Multiple accent variations within supported languages</li>
+        </ul>
+
+        <h2>Performance Optimization and Best Practices</h2>
+        <p>The starter kit incorporates several performance optimizations to ensure smooth operation across different devices and network conditions.</p>
+
+        <h3>Audio Streaming Optimizations</h3>
+        <ul>
+          <li><strong>Chunked Audio Processing:</strong> Breaking large audio files into manageable chunks for faster processing</li>
+          <li><strong>Adaptive Bitrate Streaming:</strong> Automatically adjusting audio quality based on network conditions</li>
+          <li><strong>Client-Side Caching:</strong> Intelligent caching of frequently used audio responses</li>
+          <li><strong>Background Processing:</strong> Non-blocking audio generation using Web Workers</li>
+        </ul>
+
+        <h3>Memory Management</h3>
+        <p>Efficient memory usage is crucial for audio applications, especially on mobile devices:</p>
+        <ul>
+          <li><strong>Audio Buffer Management:</strong> Automatic cleanup of audio buffers to prevent memory leaks</li>
+          <li><strong>Lazy Loading:</strong> Loading audio components only when needed</li>
+          <li><strong>Resource Pooling:</strong> Reusing audio contexts and connections to minimize overhead</li>
+        </ul>
+
+        <h2>Security and Privacy Considerations</h2>
+        <p>The starter kit implements robust security measures to protect user data and ensure privacy compliance.</p>
+
+        <h3>Data Protection Features</h3>
+        <ul>
+          <li><strong>Client-Side Processing:</strong> Audio processing happens locally when possible to minimize data transmission</li>
+          <li><strong>Encrypted Connections:</strong> All API communications use HTTPS/WSS encryption</li>
+          <li><strong>Temporary Audio Storage:</strong> Audio data is automatically purged after processing</li>
+          <li><strong>User Consent Management:</strong> Built-in prompts for microphone access and data usage consent</li>
+        </ul>
+
+        <h3>GDPR and Privacy Compliance</h3>
+        <p>The starter kit includes features to help developers comply with privacy regulations:</p>
+        <ul>
+          <li><strong>Data Minimization:</strong> Only collecting necessary audio data for functionality</li>
+          <li><strong>User Control:</strong> Easy-to-implement opt-out and data deletion features</li>
+          <li><strong>Audit Logging:</strong> Optional logging of data processing activities for compliance</li>
+        </ul>
+
+        <h2>Community Response and Industry Impact</h2>
+        <p>The release of the ElevenLabs Next.js Audio Starter Kit has generated significant excitement in the developer community, with industry experts praising its potential to democratize AI audio development.</p>
+
+        <h3>Developer Community Feedback</h3>
+        <p>Early adopters have highlighted several key benefits:</p>
+        <blockquote style="border-left: 4px solid #3b82f6; padding-left: 16px; margin: 20px 0; font-style: italic; color: #e5e7eb;">
+          <p>"This starter kit is a game changer for developers looking to integrate voice features quickly. The documentation is excellent and the examples are comprehensive." - James Poulter, Head of AI & Innovation at House 337</p>
+        </blockquote>
+
+        <blockquote style="border-left: 4px solid #3b82f6; padding-left: 16px; margin: 20px 0; font-style: italic; color: #e5e7eb;">
+          <p>"Looking forward to see some interesting remixes of this template." - Louis J., Engineering at ElevenLabs</p>
+        </blockquote>
+
+        <h3>Market Impact</h3>
+        <p>The open-source release represents a strategic move by ElevenLabs to:</p>
+        <ul>
+          <li><strong>Lower Barriers to Entry:</strong> Making advanced AI audio accessible to developers without extensive ML expertise</li>
+          <li><strong>Accelerate Innovation:</strong> Enabling rapid prototyping and development of voice-enabled applications</li>
+          <li><strong>Build Ecosystem:</strong> Creating a community of developers building on ElevenLabs' platform</li>
+          <li><strong>Drive Adoption:</strong> Increasing usage of ElevenLabs' APIs through simplified integration</li>
+        </ul>
+
+        <h2>Comparison with Existing Solutions</h2>
+        <p>The ElevenLabs Next.js Audio Starter Kit stands out in the crowded field of audio development tools through several key differentiators.</p>
+
+        <h3>Advantages Over Competitors</h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+          <thead>
+            <tr style="border-bottom: 2px solid #3b82f6;">
+              <th style="padding: 12px; text-align: left; color: #3b82f6;">Feature</th>
+              <th style="padding: 12px; text-align: left; color: #3b82f6;">ElevenLabs Starter Kit</th>
+              <th style="padding: 12px; text-align: left; color: #3b82f6;">Traditional Solutions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #374151;">
+              <td style="padding: 12px;">Setup Time</td>
+              <td style="padding: 12px;">5-10 minutes</td>
+              <td style="padding: 12px;">Hours to days</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #374151;">
+              <td style="padding: 12px;">Voice Quality</td>
+              <td style="padding: 12px;">Studio-grade AI voices</td>
+              <td style="padding: 12px;">Robotic or limited options</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #374151;">
+              <td style="padding: 12px;">Multi-modal Support</td>
+              <td style="padding: 12px;">TTS, STT, Effects, Conversation</td>
+              <td style="padding: 12px;">Usually single-purpose</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #374151;">
+              <td style="padding: 12px;">Real-time Processing</td>
+              <td style="padding: 12px;">Built-in WebSocket support</td>
+              <td style="padding: 12px;">Custom implementation required</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Future Roadmap and Upcoming Features</h2>
+        <p>ElevenLabs has outlined an ambitious roadmap for the Next.js Audio Starter Kit, with several exciting features planned for future releases.</p>
+
+        <h3>Planned Enhancements</h3>
+        <ul>
+          <li><strong>Mobile SDK Integration:</strong> Native mobile app development support for React Native</li>
+          <li><strong>Advanced Voice Cloning:</strong> Simplified interface for creating custom voice clones</li>
+          <li><strong>Real-time Voice Effects:</strong> Live audio processing and voice modulation capabilities</li>
+          <li><strong>Collaborative Features:</strong> Multi-user voice sessions and shared audio workspaces</li>
+          <li><strong>Analytics Dashboard:</strong> Built-in usage analytics and performance monitoring</li>
+        </ul>
+
+        <h3>Community Contributions</h3>
+        <p>The open-source nature of the project encourages community contributions, with several areas identified for community development:</p>
+        <ul>
+          <li><strong>Additional UI Components:</strong> Pre-built components for common audio interface patterns</li>
+          <li><strong>Integration Examples:</strong> Sample implementations for popular frameworks and platforms</li>
+          <li><strong>Performance Optimizations:</strong> Community-driven improvements to audio processing efficiency</li>
+          <li><strong>Accessibility Enhancements:</strong> Better support for users with disabilities</li>
+        </ul>
+
+        <h2>Getting Started: Your First Voice-Enabled Application</h2>
+        <p>To help developers get started quickly, here's a step-by-step guide to building your first application using the ElevenLabs Next.js Audio Starter Kit.</p>
+
+        <h3>Building a Simple Voice Assistant</h3>
+        <p>Let's create a basic voice assistant that can answer questions and respond with synthesized speech:</p>
+
+        <div style="background: rgba(17, 24, 39, 0.8); padding: 20px; border-radius: 8px; margin: 20px 0; overflow-x: auto;">
+          <pre style="margin: 0; color: #e5e7eb; font-family: 'Fira Code', monospace; font-size: 14px;"><code>import { useState } from 'react';
+import { useConversation } from '@elevenlabs/react';
+
+export default function VoiceAssistant() {
+  const [isListening, setIsListening] = useState(false);
+  const [transcript, setTranscript] = useState('');
+  
+  const conversation = useConversation({
+    onConnect: () => console.log('Assistant connected'),
+    onMessage: (message) => {
+      setTranscript(message.content);
+    },
+    onError: (error) => console.error('Error:', error),
+  });
+
+  const handleStartConversation = async () => {
+    try {
+      await navigator.mediaDevices.getUserMedia({ audio: true });
+      await conversation.startSession({
+        agentId: process.env.NEXT_PUBLIC_AGENT_ID,
+      });
+      setIsListening(true);
+    } catch (error) {
+      console.error('Failed to start conversation:', error);
+    }
+  };
+
+  return (
+    &lt;div className="voice-assistant"&gt;
+      &lt;h2&gt;Voice Assistant&lt;/h2&gt;
+      &lt;button 
+        onClick={handleStartConversation}
+        disabled={conversation.status === 'connected'}
+      &gt;
+        {isListening ? 'Listening...' : 'Start Conversation'}
+      &lt;/button&gt;
+      
+      {transcript && (
+        &lt;div className="transcript"&gt;
+          &lt;p&gt;{transcript}&lt;/p&gt;
+        &lt;/div&gt;
+      )}
+    &lt;/div&gt;
+  );
+}</code></pre>
+        </div>
+
+        <h3>Adding Text-to-Speech Functionality</h3>
+        <p>Enhance your application with custom text-to-speech capabilities:</p>
+
+        <div style="background: rgba(17, 24, 39, 0.8); padding: 20px; border-radius: 8px; margin: 20px 0; overflow-x: auto;">
+          <pre style="margin: 0; color: #e5e7eb; font-family: 'Fira Code', monospace; font-size: 14px;"><code>import { ElevenLabsClient } from 'elevenlabs';
+
+const elevenlabs = new ElevenLabsClient({
+  apiKey: process.env.ELEVENLABS_API_KEY
+});
+
+export async function generateSpeech(text: string, voice: string = 'Bella') {
+  try {
+    const audio = await elevenlabs.generate({
+      voice,
+      text,
+      model_id: "eleven_multilingual_v2",
+      voice_settings: {
+        stability: 0.5,
+        similarity_boost: 0.5
+      }
+    });
+    
+    return audio;
+  } catch (error) {
+    console.error('Speech generation failed:', error);
+    throw error;
+  }
+}</code></pre>
+        </div>
+
+        <h2>Troubleshooting and Common Issues</h2>
+        <p>Based on community feedback and testing, here are solutions to common issues developers might encounter:</p>
+
+        <h3>Audio Permissions and Browser Compatibility</h3>
+        <ul>
+          <li><strong>Microphone Access:</strong> Always request permissions in response to user interaction</li>
+          <li><strong>HTTPS Requirement:</strong> Audio APIs require secure contexts (HTTPS) in production</li>
+          <li><strong>Browser Support:</strong> Test across different browsers as Web Audio API support varies</li>
+          <li><strong>Mobile Considerations:</strong> iOS Safari has specific requirements for audio playback</li>
+        </ul>
+
+        <h3>Performance Optimization Tips</h3>
+        <ul>
+          <li><strong>Audio Caching:</strong> Implement intelligent caching for frequently used audio clips</li>
+          <li><strong>Connection Pooling:</strong> Reuse WebSocket connections when possible</li>
+          <li><strong>Error Handling:</strong> Implement robust error handling for network failures</li>
+          <li><strong>Resource Cleanup:</strong> Properly dispose of audio contexts and buffers</li>
+        </ul>
+
+        <h2>Conclusion: The Future of Voice-Enabled Web Applications</h2>
+        <p>The ElevenLabs Next.js Audio Starter Kit represents a significant leap forward in making advanced AI audio capabilities accessible to developers worldwide. By providing a comprehensive, well-documented and production-ready foundation, ElevenLabs has removed many of the traditional barriers to building sophisticated voice-enabled applications.</p>
+
+        <p>The combination of cutting-edge AI technology with modern web development practices creates unprecedented opportunities for innovation. From accessibility tools that help users with disabilities to immersive gaming experiences that respond to voice commands, the potential applications are virtually limitless.</p>
+
+        <p>As the web continues to evolve toward more natural and intuitive user interfaces, voice interaction will play an increasingly important role. The ElevenLabs Next.js Audio Starter Kit positions developers to be at the forefront of this transformation, providing the tools and knowledge needed to create the next generation of voice-enabled web applications.</p>
+
+        <p>Whether you're a seasoned developer looking to add voice features to existing applications or a newcomer interested in exploring the possibilities of AI audio, this starter kit offers an excellent entry point into the exciting world of voice-enabled web development.</p>
+
+        <div style="margin-top: 3rem;">
+          <h2 style="display: flex; align-items: center; gap: 8px; color: #3b82f6; margin-bottom: 2rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Sources & Further Reading
+          </h2>
+          
+          <div style="display: grid; gap: 1.5rem;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 1.5rem;">
+              <h3 style="color: #e5e7eb; font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">ElevenLabs Next.js Audio Starter Kit Repository</h3>
+              <p style="color: #9ca3af; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem;">Complete open-source template with Text to Speech, Speech to Text, Sound Effects and Conversational AI. Includes comprehensive documentation and examples.</p>
+              <a href="https://github.com/elevenlabs/elevenlabs-docs/tree/main/examples/elevenlabs-nextjs" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; font-size: 0.875rem; font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+                View Repository
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m7 17 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 1.5rem;">
+              <h3 style="color: #e5e7eb; font-size: 1.125rem; font-weight: 600; margin-bottom: 0.75rem;">ElevenLabs Conversational AI Documentation</h3>
+              <p style="color: #9ca3af; font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem;">Official developer documentation covering Next.js integration, WebSocket implementation and real-time voice conversation setup.</p>
+              <a href="https://elevenlabs.io/docs/conversational-ai/guides/quickstarts/next-js" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; font-size: 0.875rem; font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+                Read Documentation
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m7 17 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  },
   "google-gemma-3n-mobile-first-ai-architecture": {
     id: 7,
     title: "Google's Gemma 3n: Revolutionary Mobile-First AI with MatFormer Architecture",
