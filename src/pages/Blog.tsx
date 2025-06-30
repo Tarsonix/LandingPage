@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 9,
+    title: "Cursor Goes Mobile: Revolutionary AI Code Editor Now Available on Web and Mobile Devices",
+    excerpt: "Cursor breaks new ground by bringing its powerful AI coding assistant to web browsers and mobile devices. Discover how this game-changing release transforms development workflows with background agents, cross-device collaboration and seamless handoff between desktop and mobile.",
+    imageUrl: "https://images.unsplash.com/photo-1599709564204-bd5a535f739b?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "July 1, 2025",
+    readTime: "10 min read",
+    slug: "cursor-mobile-web-ai-code-editor-launch",
+    featured: true
+  },
+  {
     id: 8,
     title: "ElevenLabs Launches Next.js Audio Starter Kit: Open-Source Template for AI Voice Applications",
     excerpt: "Discover ElevenLabs' revolutionary open-source Next.js Audio Starter Kit featuring Text to Speech, Speech to Text, Sound Effects and Conversational AI. Built with modern tech stack including shadcn/ui and Tailwind CSS v4.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "June 30, 2025",
     readTime: "12 min read",
     slug: "elevenlabs-nextjs-audio-starter-kit-open-source",
-    featured: true
+    featured: false
   },
   {
     id: 7,
