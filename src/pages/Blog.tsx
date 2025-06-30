@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 8,
+    title: "ElevenLabs Launches Next.js Audio Starter Kit: Open-Source Template for AI Voice Applications",
+    excerpt: "Discover ElevenLabs' revolutionary open-source Next.js Audio Starter Kit featuring Text to Speech, Speech to Text, Sound Effects and Conversational AI. Built with modern tech stack including shadcn/ui and Tailwind CSS v4.",
+    imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "June 30, 2025",
+    readTime: "12 min read",
+    slug: "elevenlabs-nextjs-audio-starter-kit-open-source",
+    featured: true
+  },
+  {
     id: 7,
     title: "Google's Gemma 3n: Revolutionary Mobile-First AI with MatFormer Architecture",
     excerpt: "Discover Google's groundbreaking Gemma 3n neural network family featuring MatFormer architecture, Per-Layer Embeddings and multimodal capabilities optimized for mobile devices. Learn about the $150,000 Impact Challenge and how to get started.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "June 27, 2025",
     readTime: "15 min read",
     slug: "google-gemma-3n-mobile-first-ai-architecture",
-    featured: true
+    featured: false
   },
   {
     id: 6,
