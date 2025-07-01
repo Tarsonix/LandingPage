@@ -12,7 +12,7 @@ const blogPosts = [
     id: 9,
     title: "Cursor Goes Mobile: Revolutionary AI Code Editor Now Available on Web and Mobile Devices",
     excerpt: "Cursor breaks new ground by bringing its powerful AI coding assistant to web browsers and mobile devices. Discover how this game-changing release transforms development workflows with background agents, cross-device collaboration and seamless handoff between desktop and mobile.",
-    imageUrl: "https://images.unsplash.com/photo-1599709564204-bd5a535f739b?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/cursor%20phone.jpg",
     date: "July 1, 2025",
     readTime: "10 min read",
     slug: "cursor-mobile-web-ai-code-editor-launch",
