@@ -23,6 +23,236 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "lovable-agent-mode-beta-autonomous-ai-coding": {
+    id: 10,
+    title: "Lovable.dev Agent Mode Beta: Autonomous AI App Coding",
+    excerpt: "Discover Lovable's groundbreaking Agent Mode (Beta) that reduces build errors by 90% and enables autonomous thinking, planning and action-taking. Learn about the new capabilities, pricing model and how to activate this game-changing feature for smarter app development.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/Lovable%20agent%20mode.png",
+    date: "July 2, 2025",
+    readTime: "14 min read",
+    slug: "lovable-agent-mode-beta-autonomous-ai-coding",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>The Dawn of Autonomous AI Development: Lovable Agent Mode Changes Everything</h2>
+        <p>In a groundbreaking move that redefines the boundaries of AI-powered app development, <strong>Lovable.dev has officially launched Agent Mode (Beta)</strong> on June 30, 2025, introducing a revolutionary approach to building applications that thinks, plans and acts autonomously. This historic release marks the transition from traditional one-step AI assistance to intelligent, multi-step reasoning that mimics real developer workflows.</p>
+        
+        <p>Agent Mode represents a paradigm shift in how developers interact with AI coding tools. Unlike conventional AI assistants that attempt to solve everything in a single response, Lovable's Agent Mode operates like a seasoned developer, methodically exploring codebases, uncovering context, making informed decisions and auto-fixing issues as they arise.</p>
+
+        <h2>Game-Changing Performance Metrics</h2>
+        <p>The impact of Agent Mode is immediately apparent in its performance statistics:</p>
+        
+        <ul>
+          <li><strong>90% reduction in build error rates</strong> compared to default mode</li>
+          <li><strong>Significant decrease in unwanted changes</strong> through better context understanding</li>
+          <li><strong>Enhanced goal achievement</strong> through autonomous problem-solving capabilities</li>
+          <li><strong>Improved consistency</strong> in handling ambitious development tasks</li>
+        </ul>
+
+        <h2>Revolutionary Agent Capabilities</h2>
+        <p>Agent Mode introduces a comprehensive suite of autonomous capabilities that fundamentally change how applications are built:</p>
+
+        <h3>Intelligent Codebase Exploration</h3>
+        <p>Agent Mode can autonomously search through your entire codebase to locate specific files, functions, or components needed for any task. This eliminates the need for manual file navigation and ensures comprehensive understanding of your project structure.</p>
+
+        <h3>Context-Aware File Reading</h3>
+        <p>The system reads files on demand to understand your application's architecture and applies edits with full contextual awareness. This ensures that changes are made with complete understanding of dependencies and relationships between different parts of your codebase.</p>
+
+        <h3>Autonomous Debugging and Error Resolution</h3>
+        <p>One of the most powerful features is Agent Mode's ability to inspect logs and network activity to identify and debug errors without requiring manual error reporting. The system proactively identifies issues and implements fixes automatically.</p>
+
+        <h3>Real-Time Web Research</h3>
+        <p>Agent Mode can search the web in real-time to fetch documentation, content, images, or screenshots needed to complete tasks. This ensures access to the most current information and resources during development.</p>
+
+        <h3>On-Demand Image Generation and Editing</h3>
+        <p>The system includes built-in capabilities to generate and edit images for your applications on demand, streamlining the design workflow and eliminating external dependencies.</p>
+
+        <h2>How Agent Mode Transforms Development Workflows</h2>
+        <p>Agent Mode fundamentally changes the development process by introducing human-like reasoning and planning capabilities:</p>
+
+        <h3>Intelligent Task Interpretation</h3>
+        <p>For every user request, Agent Mode first interprets what you're asking for, ensuring complete understanding before taking action.</p>
+
+        <h3>Systematic Codebase Exploration</h3>
+        <p>The system explores your codebase as needed, building a comprehensive understanding of your application's structure and dependencies.</p>
+
+        <h3>Context Discovery and Analysis</h3>
+        <p>Agent Mode uncovers missing context by analyzing code relationships, documentation and project history to make informed decisions.</p>
+
+        <h3>Intelligent Change Implementation</h3>
+        <p>Based on its analysis, the system makes the right changes with surgical precision, minimizing the risk of introducing bugs or breaking existing functionality.</p>
+
+        <h3>Proactive Issue Resolution</h3>
+        <p>The system auto-fixes issues as they come up, ensuring smooth development flow without manual intervention.</p>
+
+        <h3>Comprehensive Summaries</h3>
+        <p>Each session concludes with a clear summary of what was accomplished, changes made and any considerations for future development.</p>
+
+        <h2>Activation and Setup Process</h2>
+        <p>Enabling Agent Mode is designed to be straightforward for existing Lovable users:</p>
+
+        <h3>Prerequisites</h3>
+        <ul>
+          <li>Active Lovable account with project access</li>
+          <li>Agent Mode beta access (rolling out gradually)</li>
+          <li>Compatible project configuration</li>
+        </ul>
+
+        <h3>Activation Steps</h3>
+        <ol>
+          <li><strong>Access Project Settings:</strong> Navigate to your project's dropdown settings menu</li>
+          <li><strong>Locate Agent Mode Toggle:</strong> Find the Agent Mode (Beta) option in the settings panel</li>
+          <li><strong>Enable Feature:</strong> Turn on the toggle to activate Agent Mode for your project</li>
+          <li><strong>Confirm Activation:</strong> Verify that Agent Mode is active and begin using the enhanced capabilities</li>
+        </ol>
+
+        <h2>Revolutionary Pricing Model: Usage-Based Billing</h2>
+        <p>Agent Mode introduces a groundbreaking usage-based pricing model that ensures developers only pay for what they actually use:</p>
+
+        <h3>Traditional Mode Pricing</h3>
+        <ul>
+          <li><strong>Default Mode:</strong> 1 credit per message regardless of complexity</li>
+          <li><strong>Chat Mode:</strong> 1 credit per message regardless of complexity</li>
+        </ul>
+
+        <h3>Agent Mode Usage-Based Pricing</h3>
+        <p>Agent Mode costs vary based on actual usage and complexity:</p>
+        <ul>
+          <li><strong>Simple tasks:</strong> As low as 0.8 credits for basic file reads and edits</li>
+          <li><strong>Complex operations:</strong> Higher costs for multi-step processes involving multiple file operations and image generation</li>
+          <li><strong>Example pricing:</strong> A task involving 5 file reads, 4 file edits and 1 image generation costs approximately 2.2 credits</li>
+        </ul>
+
+        <blockquote>
+          <p>"Agent Mode pricing is in beta and subject to change as we learn about usage patterns."</p>
+          <footer>-- Lovable Team</footer>
+        </blockquote>
+
+        <h2>Enhanced Capabilities for Complex Development Scenarios</h2>
+        <p>Agent Mode excels in handling sophisticated development challenges that traditionally require extensive manual intervention:</p>
+
+        <h3>Major Feature Implementation</h3>
+        <p>The system can tackle large-scale feature additions by breaking them down into manageable components, implementing each piece systematically and ensuring proper integration with existing functionality.</p>
+
+        <h3>Precision Bug Fixing</h3>
+        <p>Agent Mode can identify root causes of bugs by analyzing code flow, dependencies and runtime behavior, then implement targeted fixes without affecting unrelated functionality.</p>
+
+        <h3>Third-Party System Integration</h3>
+        <p>The system excels at integrating with external APIs, services and libraries by researching documentation, understanding implementation patterns and handling authentication and data flow requirements.</p>
+
+        <h3>Code Refactoring and Optimization</h3>
+        <p>Agent Mode can systematically improve code quality, performance and maintainability while preserving functionality and ensuring backward compatibility.</p>
+
+        <h2>Industry Context and Competitive Landscape</h2>
+        <p>Lovable's Agent Mode launch occurs during a pivotal moment in AI development tools, where autonomous agents are becoming the new standard for developer productivity: The release comes as major players like GitHub Copilot, Cursor and other AI coding assistants are racing to implement similar autonomous capabilities.</p>
+
+        <h3>Market Differentiation</h3>
+        <p>What sets Lovable's Agent Mode apart from competitors is its comprehensive approach to app development, combining:</p>
+        <ul>
+          <li>Full-stack application understanding</li>
+          <li>Built-in deployment and publishing capabilities</li>
+          <li>Integrated design and development workflows</li>
+          <li>Real-time collaboration features</li>
+        </ul>
+
+        <h2>Developer Community Response and Early Adoption</h2>
+        <p>The developer community has responded enthusiastically to Agent Mode's launch, with early beta users reporting significant improvements in development velocity and code quality. The autonomous nature of the system has particular appeal for:</p>
+
+        <ul>
+          <li><strong>Solo developers</strong> seeking to expand their capabilities beyond traditional skill boundaries</li>
+          <li><strong>Small teams</strong> looking to accelerate development cycles</li>
+          <li><strong>Agencies</strong> managing multiple client projects simultaneously</li>
+          <li><strong>Entrepreneurs</strong> wanting to rapidly prototype and validate ideas</li>
+        </ul>
+
+        <h2>Future Roadmap and Expanding Capabilities</h2>
+        <p>Lovable has indicated that Agent Mode is just the beginning of their autonomous development vision. The company plans to add many more tools and capabilities in the coming weeks, suggesting a rapid evolution of the platform's intelligence and autonomy.</p>
+
+        <h3>Anticipated Enhancements</h3>
+        <ul>
+          <li>Advanced testing and quality assurance automation</li>
+          <li>Multi-language and framework support expansion</li>
+          <li>Enhanced collaboration tools for team environments</li>
+          <li>Integration with popular development workflows and CI/CD pipelines</li>
+        </ul>
+
+        <h2>Best Practices for Agent Mode Success</h2>
+        <p>To maximize the benefits of Agent Mode, developers should consider these optimization strategies:</p>
+
+        <h3>Clear Task Definition</h3>
+        <p>Provide detailed, specific instructions about what you want to accomplish, including any constraints or preferences.</p>
+
+        <h3>Context Sharing</h3>
+        <p>Share relevant background information about your project, target audience and technical requirements to help the agent make informed decisions.</p>
+
+        <h3>Iterative Refinement</h3>
+        <p>Use Agent Mode's ability to refine and improve solutions through multiple iterations to achieve optimal results.</p>
+
+        <h3>Integration with Existing Workflows</h3>
+        <p>Leverage Agent Mode's capabilities alongside your existing development tools and processes for maximum effectiveness.</p>
+
+        <h2>Security and Quality Considerations</h2>
+        <p>While Agent Mode significantly improves development speed and quality, developers should maintain awareness of security and code review practices:</p>
+
+        <ul>
+          <li><strong>Code Review:</strong> Review all changes made by Agent Mode to ensure they meet security and quality standards</li>
+          <li><strong>Testing:</strong> Implement comprehensive testing for applications built with Agent Mode assistance</li>
+          <li><strong>Access Control:</strong> Ensure appropriate access controls are in place for projects using autonomous development features</li>
+          <li><strong>Backup and Version Control:</strong> Maintain regular backups and use version control systems to track changes</li>
+        </ul>
+
+        <h2>The Future of AI-Powered Development</h2>
+        <p>Lovable's Agent Mode represents a significant step toward the future of software development, where AI agents work as intelligent partners rather than simple tools. This evolution promises to:</p>
+
+        <ul>
+          <li>Democratize application development for non-technical users</li>
+          <li>Accelerate innovation cycles for experienced developers</li>
+          <li>Enable more complex applications to be built with smaller teams</li>
+          <li>Reduce the barrier to entry for entrepreneurial ventures</li>
+        </ul>
+
+        <h2>Conclusion: A New Chapter in Development History</h2>
+        <p>Lovable's Agent Mode (Beta) marks a defining moment in the evolution of AI-powered development tools. By enabling autonomous thinking, planning and action-taking, it bridges the gap between human creativity and AI capability in unprecedented ways.</p>
+
+        <p>The 90% reduction in build errors, combined with the system's ability to handle complex, multi-step development tasks, positions Agent Mode as more than just an incremental improvement – it's a fundamental reimagining of how applications can be built.</p>
+
+        <p>As the platform continues to evolve and expand its capabilities, developers who embrace Agent Mode early will be well-positioned to take advantage of the autonomous development revolution that's reshaping the software industry.</p>
+
+        <p><strong>Ready to experience the future of autonomous development?</strong> Check if you have access to Agent Mode (Beta) in your Lovable project settings and begin exploring the next generation of AI-powered app development today.</p>
+
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;"> Introducing Agent Mode (Beta) - Lovable Official Blog</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official announcement from Lovable detailing Agent Mode's capabilities, pricing model and how to enable the beta feature for autonomous AI-powered app development.</p>
+              <a href="https://lovable.dev/blog/agent-mode-beta" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Read Official Announcement
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Lovable 2.0: Smarter, Multiplayer and More Secure</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Background on Lovable's platform evolution, including the introduction of Chat Mode Agent that paved the way for the advanced Agent Mode capabilities.</p>
+              <a href="https://lovable.dev/blog/lovable-2-0" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Platform Evolution
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  },
   "cursor-mobile-web-ai-code-editor-launch": {
     id: 9,
     title: "Cursor Goes Mobile: Revolutionary AI Code Editor Now Available on Web and Mobile Devices",
@@ -139,7 +369,7 @@ const blogPostsData: Record<string, BlogPostData> = {
 
         <blockquote>
           <p>"The Cursor Agent on the web gives you a powerful coding assistant wherever you work. When you're back on your laptop, pick up the agent's work in Cursor to review the changes, add follow-up instructions, or directly make edits inline."</p>
-          <footer>— Team Cursor</footer>
+          <footer>-- Team Cursor</footer>
         </blockquote>
 
         <h2>The Future of Mobile Development</h2>
@@ -174,7 +404,7 @@ const blogPostsData: Record<string, BlogPostData> = {
             </div>
             <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
               <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Web & Mobile Agent Documentation</h3>
-              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive technical documentation covering setup, features, and implementation details for Cursor's web and mobile agent platform.</p>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive technical documentation covering setup, features and implementation details for Cursor's web and mobile agent platform.</p>
               <a href="https://docs.cursor.com/get-started/web-and-mobile-agent" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                 View Documentation
                 <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
