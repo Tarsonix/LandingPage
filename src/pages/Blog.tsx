@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 10,
+    title: "Lovable.dev Agent Mode Beta: Autonomous AI App Coding",
+    excerpt: "Discover Lovable's groundbreaking Agent Mode (Beta) that reduces build errors by 90% and enables autonomous thinking, planning and action-taking. Learn about the new capabilities, pricing model and how to activate this game-changing feature for smarter app development.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/Lovable%20agent%20mode.png",
+    date: "July 2, 2025",
+    readTime: "14 min read",
+    slug: "lovable-agent-mode-beta-autonomous-ai-coding",
+    featured: true
+  },
+  {
     id: 9,
     title: "Cursor Goes Mobile: Revolutionary AI Code Editor Now Available on Web and Mobile Devices",
     excerpt: "Cursor breaks new ground by bringing its powerful AI coding assistant to web browsers and mobile devices. Discover how this game-changing release transforms development workflows with background agents, cross-device collaboration and seamless handoff between desktop and mobile.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "July 1, 2025",
     readTime: "10 min read",
     slug: "cursor-mobile-web-ai-code-editor-launch",
-    featured: true
+    featured: false
   },
   {
     id: 8,
