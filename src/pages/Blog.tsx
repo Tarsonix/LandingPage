@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 11,
+    title: "OpenAI Launches ChatGPT Agent: Revolutionary AI Assistant That Takes Action",
+    excerpt: "Discover OpenAI's groundbreaking ChatGPT Agent that can autonomously handle complex tasks from start to finish. Learn about the unified agentic system, advanced capabilities, state-of-the-art performance benchmarks and how to access this game-changing AI assistant.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/ChatGPT%20Agents.png",
+    date: "July 18, 2025",
+    readTime: "16 min read",
+    slug: "openai-chatgpt-agent-revolutionary-ai-assistant",
+    featured: true
+  },
+  {
     id: 10,
     title: "Lovable.dev Agent Mode Beta: Autonomous AI App Coding",
     excerpt: "Discover Lovable's groundbreaking Agent Mode (Beta) that reduces build errors by 90% and enables autonomous thinking, planning and action-taking. Learn about the new capabilities, pricing model and how to activate this game-changing feature for smarter app development.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "July 2, 2025",
     readTime: "14 min read",
     slug: "lovable-agent-mode-beta-autonomous-ai-coding",
-    featured: true
+    featured: false
   },
   {
     id: 9,
