@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 12,
+    title: "OpenAI Launches ChatGPT Study Mode: Revolutionizing AI-Powered Learning for Students",
+    excerpt: "Discover OpenAI's groundbreaking ChatGPT Study Mode that transforms passive learning into interactive tutoring. Learn about Socratic questioning, step-by-step guidance, platform availability and how this revolutionary feature helps students build deeper understanding rather than just getting answers.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/ChatGPT%20Stydu%20Mode.png",
+    date: "August 1, 2025",
+    readTime: "14 min read",
+    slug: "openai-chatgpt-study-mode-revolutionizing-ai-learning",
+    featured: true
+  },
+  {
     id: 11,
     title: "OpenAI Launches ChatGPT Agent: Revolutionary AI Assistant That Takes Action",
     excerpt: "Discover OpenAI's groundbreaking ChatGPT Agent that can autonomously handle complex tasks from start to finish. Learn about the unified agentic system, advanced capabilities, state-of-the-art performance benchmarks and how to access this game-changing AI assistant.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "July 18, 2025",
     readTime: "16 min read",
     slug: "openai-chatgpt-agent-revolutionary-ai-assistant",
-    featured: true
+    featured: false
   },
   {
     id: 10,
