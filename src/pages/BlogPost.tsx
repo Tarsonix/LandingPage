@@ -23,6 +23,225 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "openai-chatgpt-study-mode-revolutionizing-ai-learning": {
+    id: 12,
+    title: "OpenAI Launches ChatGPT Study Mode: Revolutionizing AI-Powered Learning for Students",
+    excerpt: "Discover OpenAI's groundbreaking ChatGPT Study Mode that transforms passive learning into interactive tutoring. Learn about Socratic questioning, step-by-step guidance, platform availability and how this revolutionary feature helps students build deeper understanding rather than just getting answers.",
+    imageUrl: "https://raw.githubusercontent.com/karthikr187/blog-images/refs/heads/main/ChatGPT%20Stydu%20Mode.png",
+    date: "August 1, 2025",
+    readTime: "14 min read",
+    slug: "openai-chatgpt-study-mode-revolutionizing-ai-learning",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>Transforming Education: ChatGPT Study Mode Arrives</h2>
+        <p>On July 29, 2025, OpenAI introduced <strong>ChatGPT Study Mode</strong>, a revolutionary educational feature that fundamentally transforms how students interact with artificial intelligence for learning. Unlike traditional AI assistants that simply provide answers, Study Mode acts as an intelligent tutor, guiding students through problems step-by-step while promoting critical thinking and deeper understanding.</p>
+        
+        <p>This groundbreaking feature represents OpenAI's response to concerns about AI potentially hindering student learning by doing work for them. Instead of becoming a "homework-finishing machine," ChatGPT Study Mode transforms the AI into an actual tutor that refuses to just hand over answers and instead engages students in meaningful learning experiences.</p>
+
+        <h2>Core Learning Features: Beyond Simple Q&A</h2>
+        <p>ChatGPT Study Mode introduces several innovative features designed around pedagogical best practices developed in collaboration with teachers, scientists and learning experts from over 40 institutions worldwide:</p>
+
+        <h3>Socratic Questioning Method</h3>
+        <p>The foundation of Study Mode lies in Socratic questioning - the ancient Greek method of learning through dialogue rather than lecture. Instead of providing direct answers, the AI asks guiding questions like:</p>
+        <ul>
+          <li>"What do you think the first step should be?"</li>
+          <li>"Can you explain this concept in your own words?"</li>
+          <li>"How does this connect to what you already know?"</li>
+        </ul>
+
+        <h3>Interactive Prompts and Self-Reflection</h3>
+        <p>Study Mode combines hints with self-reflection questions that encourage critical thinking rather than passive consumption. The system prompts students to engage actively with material, ensuring they understand concepts before moving forward.</p>
+
+        <h3>Scaffolded Learning Structure</h3>
+        <p>Information is broken into digestible chunks with clear connections between topics to reduce cognitive overwhelm. The AI presents content in "scaffolded" responses that build understanding progressively.</p>
+
+        <h3>Knowledge Checks and Assessment</h3>
+        <p>Built-in quizzes and open-ended questions provide opportunities to test understanding and apply learned concepts. The system regularly inserts knowledge checks to gauge comprehension before advancing.</p>
+
+        <h3>Personalized Learning Adaptation</h3>
+        <p>ChatGPT adapts to individual skill levels based on previous interactions and uploaded files, helping students focus and stay productive. The system remembers past conversations to tailor lessons accordingly.</p>
+
+        <h2>Platform Availability and Access</h2>
+        <p>OpenAI has made Study Mode widely accessible across multiple subscription tiers and platforms:</p>
+
+        <h3>Subscription Tier Rollout</h3>
+        <p>Study Mode launched on July 29, 2025, for logged-in users across all major ChatGPT subscription plans:</p>
+        <ul>
+          <li><strong>ChatGPT Free:</strong> Available immediately</li>
+          <li><strong>ChatGPT Plus:</strong> Available immediately</li>
+          <li><strong>ChatGPT Pro:</strong> Available immediately</li>
+          <li><strong>ChatGPT Team:</strong> Available immediately</li>
+          <li><strong>ChatGPT Edu:</strong> Coming in the next few weeks</li>
+        </ul>
+
+        <h3>Platform Compatibility</h3>
+        <p>Study Mode works seamlessly across all supported ChatGPT platforms, ensuring students can access personalized tutoring wherever they are:</p>
+        <ul>
+          <li>Web browser interface</li>
+          <li>Desktop applications</li>
+          <li>iOS mobile app</li>
+          <li>Android mobile app</li>
+        </ul>
+
+        <h3>Easy Activation Steps</h3>
+        <p>Getting started with Study Mode is remarkably simple:</p>
+        <ol>
+          <li>Open ChatGPT and log into your account</li>
+          <li>Look for the "Study and learn" tool in the Tools menu</li>
+          <li>Click to activate (highlighted in blue when selected)</li>
+          <li>Choose from three options: "Help me with my homework," "Explain a topic to me," or "Create a practice quiz"</li>
+          <li>Begin your interactive learning session</li>
+        </ol>
+        <p><em>Note: If you don't see the option immediately, try logging out and logging back in.</em></p>
+
+        <h2>Revolutionary Learning Approach in Action</h2>
+        <p>Study Mode represents a fundamental shift from AI as an answer engine to AI as a learning facilitator. Early users have reported remarkable experiences that demonstrate the power of this approach.</p>
+
+        <h3>Real-World Learning Examples</h3>
+        <p>Students using Study Mode describe experiences like having access to "office hours 24/7" with a tutor who "doesn't get tired of my questions". The AI guides learners through complex topics like:</p>
+        <ul>
+          <li><strong>Mathematical Concepts:</strong> Breaking down calculus problems step-by-step rather than showing final solutions</li>
+          <li><strong>Scientific Principles:</strong> Explaining physics laws through real-world analogies and interactive questioning</li>
+          <li><strong>Programming Logic:</strong> Walking through code structure and debugging processes collaboratively</li>
+          <li><strong>Writing Skills:</strong> Helping organize essay outlines and develop arguments through guided questioning</li>
+        </ul>
+
+        <h3>Flexible Mode Switching</h3>
+        <p>One of Study Mode's most valuable features is its flexibility. Students can toggle the mode on and off during conversations, allowing them to switch between guided learning and quick factual lookups as needed. This design recognizes that different learning situations require different approaches.</p>
+
+        <h2>Educational Impact and Early Reactions</h2>
+        <p>The response from educators and students has been overwhelmingly positive, with many highlighting the potential for AI-assisted education when designed with pedagogical principles in mind.</p>
+
+        <h3>Educator Perspectives</h3>
+        <p>Teachers who have tested early builds appreciate the pacing and interactive nature of Study Mode, though some still express concerns about AI hallucinations and the need for students to verify information. OpenAI's VP of Education, Leah Belsky, emphasizes that the goal is to "guide students toward deeper learning" rather than doing work for them.</p>
+
+        <h3>Student Feedback</h3>
+        <p>Early user feedback reveals several key benefits:</p>
+        <ul>
+          <li><strong>Increased Engagement:</strong> Students report feeling more actively involved in the learning process</li>
+          <li><strong>Better Understanding:</strong> The step-by-step approach helps build genuine comprehension</li>
+          <li><strong>Confidence Building:</strong> Guided questioning helps students discover they know more than they realized</li>
+          <li><strong>Accessibility:</strong> 24/7 availability eliminates barriers to getting help when needed</li>
+        </ul>
+
+        <h3>Academic Integrity Considerations</h3>
+        <p>Unlike traditional AI usage that can enable academic dishonesty, Study Mode is designed to promote genuine learning. Students must engage with material and demonstrate understanding rather than simply copying answers.</p>
+
+        <h2>Technical Implementation and Future Development</h2>
+        <p>Study Mode represents a sophisticated approach to AI-powered education, built on careful prompt engineering and pedagogical research.</p>
+
+        <h3>Custom System Instructions</h3>
+        <p>The current implementation runs on "custom system instructions" rather than being trained directly into OpenAI's models. This approach allows for rapid iteration and improvement based on real-world student feedback.</p>
+
+        <h3>NextGenAI Initiative</h3>
+        <p>Study Mode is part of OpenAI's broader NextGenAI initiative, which supports education research in partnership with institutions like Stanford's SCALE Initiative. This collaboration aims to study how AI tools actually influence learning outcomes.</p>
+
+        <h3>Planned Future Features</h3>
+        <p>OpenAI has outlined several enhancements coming to Study Mode:</p>
+        <ul>
+          <li><strong>Visual Explanations:</strong> Clearer diagrams and visualizations for complex concepts</li>
+          <li><strong>Goal Setting:</strong> Long-term progress tracking across conversations</li>
+          <li><strong>Deeper Personalization:</strong> More sophisticated adaptation to individual learning styles and needs</li>
+          <li><strong>Administrative Controls:</strong> Potential tools for parents and educators to manage student access</li>
+        </ul>
+
+        <h2>Addressing Educational Challenges</h2>
+        <p>Study Mode directly addresses several longstanding concerns about AI in education while opening new possibilities for personalized learning.</p>
+
+        <h3>Preventing Academic Over-Reliance</h3>
+        <p>By refusing to provide direct answers and instead guiding students through problems, Study Mode helps prevent the "brain atrophy" concerns that educators have raised about AI usage. Students must actively engage with material to progress.</p>
+
+        <h3>Supporting Diverse Learning Needs</h3>
+        <p>The personalized nature of Study Mode makes it particularly valuable for students who struggle in traditional classroom settings or need additional support outside regular school hours.</p>
+
+        <h3>Competitive Landscape Response</h3>
+        <p>Study Mode positions OpenAI competitively against other educational AI tools. Anthropic launched a similar "Learning Mode" feature for Claude in April 2025, while Google has been testing "Guided Learning for Gemini" with comparable functionality.</p>
+
+        <h2>Privacy and Safety Considerations</h2>
+        <p>OpenAI has implemented several safeguards to ensure Study Mode serves students responsibly:</p>
+
+        <h3>Data Protection</h3>
+        <p>Student interactions are protected under OpenAI's standard privacy policies, with particular attention to educational data sensitivity.</p>
+
+        <h3>Content Accuracy</h3>
+        <p>While Study Mode may occasionally produce inconsistent behavior or mistakes across conversations, OpenAI is actively working to improve reliability through user feedback and model refinements.</p>
+
+        <h3>Age-Appropriate Design</h3>
+        <p>The system is designed with student safety in mind, avoiding inappropriate content and maintaining educational focus throughout interactions.</p>
+
+        <h2>Global Educational Implications</h2>
+        <p>ChatGPT Study Mode has potential implications far beyond individual student success, particularly for educational equity and access.</p>
+
+        <h3>Democratizing Quality Education</h3>
+        <p>By providing high-quality tutoring experiences through any internet connection, Study Mode could help bridge educational gaps in underserved communities or developing regions.</p>
+
+        <h3>Supporting Teacher Effectiveness</h3>
+        <p>Rather than replacing educators, Study Mode can augment teaching by handling individualized support while freeing teachers to focus on higher-order instruction and classroom management.</p>
+
+        <h3>Multilingual Learning Support</h3>
+        <p>ChatGPT's multilingual capabilities mean Study Mode can provide educational support in numerous languages, making it valuable for diverse global audiences.</p>
+
+        <h2>Getting Started with ChatGPT Study Mode</h2>
+        <p>For students, educators and parents interested in exploring this revolutionary learning tool, getting started is straightforward and immediate.</p>
+
+        <h3>Best Practices for Students</h3>
+        <ul>
+          <li><strong>Engage Actively:</strong> Don't try to bypass the questioning - embrace the guided learning process</li>
+          <li><strong>Be Honest:</strong> If you don't understand something, say so - the AI will adjust its approach</li>
+          <li><strong>Take Notes:</strong> Capture key insights and understanding as you work through problems</li>
+          <li><strong>Practice Regularly:</strong> Use Study Mode for ongoing learning, not just crisis homework help</li>
+        </ul>
+
+        <h3>Educator Integration Strategies</h3>
+        <ul>
+          <li><strong>Supplemental Support:</strong> Position Study Mode as additional help, not replacement for classroom instruction</li>
+          <li><strong>Academic Integrity:</strong> Establish clear guidelines about appropriate usage in coursework</li>
+          <li><strong>Progress Monitoring:</strong> Check in with students about their Study Mode experiences and learning</li>
+          <li><strong>Professional Development:</strong> Learn about AI-assisted education to guide student usage effectively</li>
+        </ul>
+
+        <h2>The Future of AI-Powered Education</h2>
+        <p>ChatGPT Study Mode represents just the beginning of what's possible when artificial intelligence is designed specifically for educational purposes. As the technology continues to evolve, we can expect even more sophisticated approaches to personalized learning.</p>
+
+        <h3>Research and Development Outlook</h3>
+        <p>OpenAI's commitment to educational research through partnerships with academic institutions suggests continued innovation in AI-powered learning tools. Future developments may include even more sophisticated personalization, better integration with traditional curricula and enhanced assessment capabilities.</p>
+
+        <h3>Industry Transformation</h3>
+        <p>As major AI companies compete to create better educational tools, students worldwide stand to benefit from increasingly sophisticated and effective learning assistance. This competition is driving rapid innovation in pedagogically-sound AI design.</p>
+
+        <h2>Conclusion: A New Era of Learning</h2>
+        <p>OpenAI's ChatGPT Study Mode marks a pivotal moment in educational technology - the transition from AI as a simple answer provider to AI as a sophisticated learning partner. By incorporating proven pedagogical principles like Socratic questioning and scaffolded learning, OpenAI has created a tool that genuinely enhances education rather than undermining it.</p>
+
+        <p>For students, Study Mode offers unprecedented access to personalized tutoring that adapts to their individual needs and learning pace. For educators, it provides a powerful tool to supplement classroom instruction and support diverse learning needs. For the broader educational community, it demonstrates that artificial intelligence can be designed to promote genuine learning and critical thinking.</p>
+
+        <p>As this technology continues to evolve and improve, ChatGPT Study Mode stands as a testament to the potential of AI to transform education for the better - not by replacing human connection and guidance, but by making high-quality educational support accessible to every student, anywhere, at any time.</p>
+
+        <hr class="my-8">
+
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">ChatGPT Study Mode - OpenAI Official Announcement</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official announcement from OpenAI introducing ChatGPT Study Mode, the revolutionary educational feature that transforms AI from an answer engine to an intelligent tutor.</p>
+              <a href="https://openai.com/index/chatgpt-study-mode/" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Read Official Announcement
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  },
   "openai-chatgpt-agent-revolutionary-ai-assistant": {
     id: 11,
     title: "OpenAI Launches ChatGPT Agent: Revolutionary AI Assistant That Takes Action",
@@ -2900,6 +3119,34 @@ const BlogPost = () => {
   const post = slug ? blogPostsData[slug] : null;
   const [processedContent, setProcessedContent] = useState<string>("");
   const { toast } = useToast();
+
+  // Social sharing functions
+  const shareOnTwitter = (title: string, url: string) => {
+    const text = `Check out this article: ${title}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(twitterUrl, '_blank');
+  };
+
+  const shareOnLinkedIn = (url: string) => {
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+    window.open(linkedInUrl, '_blank');
+  };
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast({
+        title: "Link Copied",
+        description: "The link has been copied to your clipboard.",
+      });
+    } catch (err) {
+      toast({
+        title: "Error",
+        description: "Failed to copy link to clipboard.",
+        variant: "destructive",
+      });
+    }
+  };
   
   useEffect(() => {
     // Scroll to top when component mounts
@@ -2933,62 +3180,29 @@ const BlogPost = () => {
   const renderContent = () => {
     if (!processedContent) return null;
     
-    // Split by code block placeholders
-    const parts = processedContent.split(/<div class="code-block-placeholder" data-index="\d+" data-code="([^"]+)"><\/div>/);
-    
-    // Reassemble with CodeBlock components
-    const result = [];
-    for (let i = 0; i < parts.length; i++) {
-      if (i % 2 === 0) {
-        // This is regular HTML content
-        result.push(<div key={`content-${i}`} dangerouslySetInnerHTML={{ __html: parts[i] }} />);
-      } else {
-        // This is a code block
-        const code = decodeURIComponent(parts[i]);
-        result.push(<CodeBlock key={`code-${i}`} code={code} />);
-      }
-    }
-    
-    return result;
-  };
-
-  const copyToClipboard = () => {
-    const currentUrl = window.location.href;
-    navigator.clipboard.writeText(currentUrl)
-      .then(() => {
-        toast({
-          title: "Link copied",
-          description: "URL has been copied to clipboard",
-        });
-      })
-      .catch(err => {
-        console.error('Failed to copy: ', err);
-      });
-  };
-  
-  const getTwitterShareUrl = () => {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(post?.title || 'Check out this article');
-    return `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
-  };
-  
-  const getLinkedInShareUrl = () => {
-    const url = encodeURIComponent(window.location.href);
-    return `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+    return (
+      <div 
+        dangerouslySetInnerHTML={{ __html: processedContent }}
+        className="prose prose-invert prose-blue max-w-none"
+      />
+    );
   };
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-tarsonix-dark-blue to-tarsonix-dark">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         <Navbar />
-        <div className="container mx-auto px-4 pt-32 pb-20 text-center">
-          <h1 className="text-3xl font-bold text-tarsonix-white mb-4">Blog Post Not Found</h1>
-          <p className="text-tarsonix-white/70 mb-8">The blog post you're looking for doesn't exist or has been removed.</p>
-          <Link to="/blog">
-            <Button className="bg-tarsonix-blue hover:bg-tarsonix-blue/80 text-tarsonix-white">
-              Back to Blog
-            </Button>
-          </Link>
+        <div className="container mx-auto px-4 py-16">
+          <div className="text-center text-white">
+            <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
+            <p className="text-gray-300 mb-8">The blog post you're looking for doesn't exist.</p>
+            <Link to="/blog">
+              <Button variant="outline" className="text-white border-white hover:bg-white hover:text-black">
+                <ChevronLeft className="mr-2 h-4 w-4" />
+                Back to Blog
+              </Button>
+            </Link>
+          </div>
         </div>
         <Footer />
       </div>
@@ -2996,89 +3210,83 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-tarsonix-dark-blue to-tarsonix-dark">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <Navbar />
-      
-      <article className="container mx-auto px-4 md:px-8 pt-32 pb-20">
-        {/* Back Button */}
-        <div className="mb-8">
-          <Link to="/blog">
-            <Button variant="ghost" className="text-tarsonix-white/80 hover:text-tarsonix-white">
-              <ChevronLeft className="h-4 w-4 mr-2" />
-              Back to Blog
-            </Button>
-          </Link>
-        </div>
-        
-        {/* Header */}
-        <header className="max-w-4xl mx-auto mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 gradient-text">
-            {post.title}
-          </h1>
-          
-          <div className="flex items-center mb-8">
-            <div className="flex items-center gap-4 text-tarsonix-white/60 text-sm">
-              <span className="flex items-center gap-1">
-                <Calendar className="h-4 w-4" />
+      <div className="container mx-auto px-4 pt-32 pb-8">
+        <Link to="/blog" className="inline-flex items-center text-gray-300 hover:text-white hover:bg-white/10 hover:border-white/20 border border-transparent rounded-lg px-3 py-2 mb-8 transition-all duration-200">
+          <ChevronLeft className="mr-2 h-4 w-4" />
+          Back to Blog
+        </Link>
+
+        <article className="max-w-4xl mx-auto">
+          {/* Header */}
+          <header className="mb-8">
+            <h1 className="text-4xl font-bold text-white mb-4">{post.title}</h1>
+            <div className="flex items-center text-gray-400 text-sm mb-6 space-x-4">
+              <div className="flex items-center">
+                <Calendar className="h-4 w-4 mr-1" />
                 {post.date}
-              </span>
-              <span className="flex items-center gap-1">
-                <Clock className="h-4 w-4" />
+              </div>
+              <div className="flex items-center">
+                <Clock className="h-4 w-4 mr-1" />
                 {post.readTime}
-              </span>
+              </div>
             </div>
-          </div>
-          
-          <img 
-            src={post.imageUrl} 
-            alt={post.title}
-            className="w-full h-64 md:h-80 object-cover rounded-xl"
-          />
-        </header>
-        
-        {/* Content */}
-        <div className="max-w-3xl mx-auto">
-          <div className="prose prose-invert prose-blue max-w-none">
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="w-full h-96 object-cover rounded-lg mb-6"
+            />
+            <p className="text-xl text-gray-300 leading-relaxed">{post.excerpt}</p>
+          </header>
+
+          {/* Content */}
+          <div className="text-gray-300 leading-relaxed">
             {renderContent()}
           </div>
-          
-          {/* Social Share */}
-          <div className="mt-16 pt-8 border-t border-tarsonix-blue/30">
-            <h3 className="text-xl font-bold mb-4 text-tarsonix-white/90">Share this article</h3>
-            <div className="flex gap-4">
-              <a 
-                href={getTwitterShareUrl()} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 border border-tarsonix-blue/40 rounded-md text-tarsonix-white/90 hover:bg-tarsonix-blue/10 transition-colors"
-                aria-label="Share on X (Twitter)"
-              >
-                <XIcon className="h-5 w-5" />
-              </a>
-              <a 
-                href={getLinkedInShareUrl()} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-2 border border-tarsonix-blue/40 rounded-md text-tarsonix-white/90 hover:bg-tarsonix-blue/10 transition-colors"
-                aria-label="Share on LinkedIn"
-              >
-                <LinkedInIcon className="h-5 w-5" />
-              </a>
-              <button 
-                onClick={copyToClipboard}
-                className="p-2 border border-tarsonix-blue/40 rounded-md text-tarsonix-white/90 hover:bg-tarsonix-blue/10 transition-colors"
-                aria-label="Copy link to clipboard"
-              >
-                <Clipboard className="h-5 w-5" />
-              </button>
+
+          {/* Share buttons */}
+          <div className="mt-12 pt-8 border-t border-gray-700">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-4">
+                <span className="text-gray-400">Share this article:</span>
+                <div className="flex space-x-3">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => shareOnTwitter(post.title, window.location.href)}
+                    className="text-gray-300 border-gray-600 hover:bg-gray-700"
+                  >
+                    <XIcon className="h-4 w-4 mr-2" />
+                    Twitter
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => shareOnLinkedIn(window.location.href)}
+                    className="text-gray-300 border-gray-600 hover:bg-gray-700"
+                  >
+                    <LinkedInIcon className="h-4 w-4 mr-2" />
+                    LinkedIn
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => copyToClipboard(window.location.href)}
+                    className="text-gray-300 border-gray-600 hover:bg-gray-700"
+                  >
+                    <Clipboard className="h-4 w-4 mr-2" />
+                    Copy Link
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
-      
+        </article>
+      </div>
       <Footer />
     </div>
   );
 };
 
-export default BlogPost; 
+export default BlogPost;
