@@ -3555,8 +3555,16 @@ const BlogPost = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        <Navbar />
+      <div className="min-h-screen bg-[#0a0a0f] relative overflow-hidden">
+        {/* Subtle radial spotlight effects */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.04),transparent_60%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(147,51,234,0.03),transparent_60%)]"></div>
+        
+        {/* Noise texture overlay */}
+        <div className="absolute inset-0 opacity-[0.015]" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E\")"}}></div>
+        
+        <div className="relative z-10">
+          <Navbar />
         <div className="container mx-auto px-4 py-16">
           <div className="text-center text-white">
             <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
@@ -3570,13 +3578,22 @@ const BlogPost = () => {
           </div>
         </div>
         <Footer />
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <Navbar />
+    <div className="min-h-screen bg-[#0a0a0f] relative overflow-hidden">
+      {/* Subtle radial spotlight effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.04),transparent_60%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(147,51,234,0.03),transparent_60%)]"></div>
+      
+      {/* Noise texture overlay */}
+      <div className="absolute inset-0 opacity-[0.015]" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E\")"}}></div>
+      
+      <div className="relative z-10">
+        <Navbar />
       <div className="container mx-auto px-4 pt-32 pb-8">
         <Link to="/blog" className="inline-flex items-center text-gray-300 hover:text-white hover:bg-white/10 hover:border-white/20 border border-transparent rounded-lg px-3 py-2 mb-8 transition-all duration-200">
           <ChevronLeft className="mr-2 h-4 w-4" />
@@ -3650,6 +3667,7 @@ const BlogPost = () => {
         </article>
       </div>
       <Footer />
+      </div>
     </div>
   );
 };

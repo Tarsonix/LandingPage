@@ -152,8 +152,16 @@ const Blog = () => {
   const regularPosts = filteredPosts.filter(post => !post.featured);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-tarsonix-dark-blue to-tarsonix-dark">
-      <Navbar />
+    <div className="min-h-screen bg-[#0a0a0f] relative overflow-hidden">
+      {/* Subtle radial spotlight effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.03),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(147,51,234,0.02),transparent_50%)]"></div>
+      
+      {/* Noise texture overlay for depth */}
+      <div className="absolute inset-0 opacity-[0.015]" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E\")"}}></div>
+      
+      <div className="relative z-10">
+        <Navbar />
       
       {/* Header */}
       <header className="pt-32 pb-16 px-4 md:px-8 container mx-auto">
@@ -283,6 +291,7 @@ const Blog = () => {
       </main>
       
       <Footer />
+      </div>
     </div>
   );
 };
