@@ -23,6 +23,371 @@ interface BlogPostData {
 
 // Blog posts data - emptied for production
 const blogPostsData: Record<string, BlogPostData> = {
+  "openai-agentkit-agent-builder-complete-toolkit": {
+    id: 13,
+    title: "OpenAI Unveils AgentKit and Agent Builder: The Complete Toolkit for Building Production-Ready AI Agents",
+    excerpt: "Discover OpenAI's revolutionary AgentKit launched at DevDay 2025, featuring Agent Builder's visual canvas, ChatKit's embeddable chat, powerful Evals and Connector Registry. Learn how enterprises like Ramp, Klarna and HubSpot are building autonomous agents in minutes, not months.",
+    imageUrl: "https://drive.google.com/thumbnail?id=1Y4oE567viupzvFIF3RHHLtxQEByKfKUU&sz=w1632",
+    date: "October 6, 2025",
+    readTime: "18 min read",
+    slug: "openai-agentkit-agent-builder-complete-toolkit",
+    featured: true,
+    content: `
+      <div class="prose prose-invert prose-blue max-w-none">
+        <h2>The Agent Revolution Arrives: OpenAI's DevDay 2025 Unveils AgentKit</h2>
+        <p>On October 6, 2025, at OpenAI's highly anticipated DevDay conference, the company unveiled <strong>AgentKit</strong>, a comprehensive toolkit that fundamentally transforms how developers build, deploy and optimize AI agents. This groundbreaking release marks OpenAI's boldest move yet to democratize agent development, providing enterprises and developers with production-ready tools that reduce the complexity of building autonomous AI systems from months to minutes.</p>
+        
+        <p>In a stunning live demonstration, OpenAI engineer Christina Huang built an entire AI workflow and two fully functional AI agents on stage in under eight minutes, showcasing the remarkable speed and simplicity that AgentKit brings to agent development. This isn't just another developer tool, it's a complete paradigm shift in how we approach building intelligent, autonomous systems.</p>
+
+        <h2>AgentKit: Four Pillars of Agent Development</h2>
+        <p>AgentKit is a modular toolkit comprising four core components that work together to streamline the entire agent development lifecycle. Each component addresses a critical challenge in building production-ready agents, from visual design to deployment and optimization.</p>
+
+        <h3>1. Agent Builder: Visual Canvas for Multi-Step Workflows</h3>
+        <p>Agent Builder is OpenAI's no-code visual interface for designing agent workflows, often described as "like Canva for building agents." This powerful tool allows developers to assemble complex multi-step agent workflows through an intuitive drag-and-drop canvas.</p>
+
+        <p><strong>Key Features of Agent Builder:</strong></p>
+        <ul>
+          <li><strong>Drag-and-Drop Workflow Design:</strong> Visual node-based interface for assembling agent logic without writing code</li>
+          <li><strong>Pre-Built Templates:</strong> Starter templates for common use cases including customer support, research assistants, HR onboarding helpers, shopping assistants and troubleshooting bots</li>
+          <li><strong>Node-Based Architecture:</strong> Connect agents, tools and control-flow logic through typed edges that ensure data integrity</li>
+          <li><strong>Live Preview and Debugging:</strong> Test workflows interactively with sample files and observe execution of each node in real-time</li>
+          <li><strong>MCP Connector Support:</strong> Integrate Model Context Protocol connectors for seamless third-party integrations</li>
+          <li><strong>Built-In Guardrails:</strong> Configurable safety checks for input and output validation to prevent misuse</li>
+          <li><strong>Logic Nodes:</strong> Custom control-flow logic for routing, conditions and agent handoffs</li>
+          <li><strong>File Search and Data Transformation:</strong> Access vector stores, embeddings and data processing capabilities</li>
+          <li><strong>Versioning and Publishing:</strong> Create versioned snapshots of workflows for production deployment</li>
+        </ul>
+
+        <p>Agent Builder provides templates for diverse applications. For example, a homework helper workflow uses specialized agents to take questions, reframe them for better answers, route them intelligently and return comprehensive responses, all configured through the visual canvas.</p>
+
+        <h3>2. ChatKit: Embeddable Chat Interface for Agents</h3>
+        <p>ChatKit is OpenAI's customizable chat embed that handles all user experience details for agentic chat applications. Whether you're building an internal knowledge base assistant, financial planning advisor, or support agent, ChatKit provides production-ready UI components.</p>
+
+        <p><strong>ChatKit Capabilities:</strong></p>
+        <ul>
+          <li><strong>Embeddable UI Widgets:</strong> Pre-built, customizable chat components that integrate seamlessly into any application</li>
+          <li><strong>Customizable Prompts:</strong> Tailor conversation flows and agent behaviors to match your brand and use case</li>
+          <li><strong>Tool Invocation Support:</strong> Native support for agent tool calling and function execution</li>
+          <li><strong>File Attachments:</strong> Enable users to upload and share files within chat conversations</li>
+          <li><strong>Chain-of-Thought Visualizations:</strong> Display agent reasoning processes for transparency and debugging</li>
+          <li><strong>Theme Customization:</strong> Full control over colors, fonts and styling to match your brand identity</li>
+          <li><strong>Actions and Widgets:</strong> Extend functionality with custom actions and interactive widgets</li>
+          <li><strong>OpenAI-Hosted Backend:</strong> Let OpenAI handle hosting and scaling, or run on your own infrastructure</li>
+        </ul>
+
+        <p><strong>Two Integration Approaches:</strong></p>
+        <p><strong>Recommended Integration:</strong> Embed ChatKit in your frontend with OpenAI hosting the backend from Agent Builder. This requires only a development server and provides the fastest path to production.</p>
+        
+        <p><strong>Advanced Integration:</strong> Run ChatKit on your own infrastructure using the ChatKit Python SDK, connecting to any agentic backend for maximum control and customization.</p>
+
+        <h3>3. Connector Registry: Secure Integration Hub</h3>
+        <p>The Connector Registry provides a centralized, secure platform for connecting agents to internal tools and third-party systems. This administrative control panel ensures robust security while simplifying integration workflows.</p>
+
+        <p><strong>Supported Integrations Include:</strong></p>
+        <ul>
+          <li><strong>Gmail:</strong> Email automation and intelligent inbox management</li>
+          <li><strong>Google Calendar:</strong> Schedule management and meeting coordination</li>
+          <li><strong>Google Drive:</strong> Document access and collaborative file management</li>
+          <li><strong>Microsoft Outlook:</strong> Enterprise email and calendar integration</li>
+          <li><strong>SharePoint:</strong> Corporate knowledge base and document repository access</li>
+          <li><strong>Third-Party MCPs:</strong> Model Context Protocol connectors for custom integrations</li>
+          <li><strong>Custom APIs:</strong> Connect to proprietary internal systems and databases</li>
+        </ul>
+
+        <p>All connections are managed through an admin control panel that provides granular security controls, API key management and usage monitoring.</p>
+
+        <h3>4. Evals for Agents: Comprehensive Performance Measurement</h3>
+        <p>Agent Evals is a full evaluation platform that measures agent quality with reproducible evaluations. This suite addresses one of the biggest challenges in agent development: ensuring reliability and performance in production.</p>
+
+        <p><strong>Evaluation Features:</strong></p>
+        <ul>
+          <li><strong>Trace Grading:</strong> Step-by-step assessment of agent behavior and decision-making processes</li>
+          <li><strong>Dataset Management:</strong> Build and manage evaluation datasets with CSV uploads, API sampling, or synthetic examples</li>
+          <li><strong>Multiple Grader Types:</strong> Score model graders, label model graders, text similarity checks, string validators and custom Python graders</li>
+          <li><strong>Automated Prompt Optimization:</strong> Identify areas for improvement and automatically refine prompts</li>
+          <li><strong>Third-Party Model Support:</strong> Run evaluations on external models directly from the OpenAI platform</li>
+          <li><strong>Template-Based Testing:</strong> Use handlebars-style variable substitution for reusable test scenarios</li>
+          <li><strong>Regression Detection:</strong> Automatic warnings based on historical baselines</li>
+          <li><strong>API-Driven Evals:</strong> Trigger evaluation runs programmatically for CI/CD integration</li>
+        </ul>
+
+        <p>The evaluation workflow integrates seamlessly with Agent Builder through workflow export IDs, allowing developers to test visual builder workflows and ChatKit flows side by side.</p>
+
+        <h2>Setting Up AgentKit: From Canvas to Production</h2>
+        <p>OpenAI has streamlined the entire agent development lifecycle into a simple three-step process, dramatically reducing the traditional complexity of building autonomous systems.</p>
+
+        <h3>Step 1: Design Your Workflow in Agent Builder</h3>
+        <p>Start by opening Agent Builder in your OpenAI dashboard. Choose from pre-built templates or start from scratch. The visual canvas allows you to:</p>
+        <ul>
+          <li>Drag and drop nodes for agents, tools and logic steps</li>
+          <li>Configure inputs and outputs with typed data contracts</li>
+          <li>Connect nodes with edges that define data flow</li>
+          <li>Add guardrails and safety checks at each step</li>
+          <li>Preview and debug with live data before deployment</li>
+        </ul>
+
+        <h3>Step 2: Publish Your Workflow</h3>
+        <p>When satisfied with your workflow, click "Publish" to create a versioned snapshot. Agent Builder autosaves your work, but publishing creates an official version with a unique workflow ID that can be used in production. You can create new versions or rollback to previous ones as needed.</p>
+
+        <h3>Step 3: Deploy with ChatKit or Agents SDK</h3>
+        <p>Choose your deployment strategy:</p>
+
+        <p><strong>ChatKit Deployment (Recommended):</strong></p>
+        <ol>
+          <li>Generate a client token on your server using the OpenAI Python SDK</li>
+          <li>Pass your workflow ID to the ChatKit session endpoint</li>
+          <li>Install the ChatKit React bindings: <code>npm install @openai/chatkit-react</code></li>
+          <li>Add the ChatKit JS script to your page</li>
+          <li>Render ChatKit in your UI with your client secret</li>
+        </ol>
+
+        <p><strong>Advanced Deployment:</strong></p>
+        <p>Click "Code" in Agent Builder's top navigation to copy the workflow code. Use the Agents SDK to run ChatKit on your own infrastructure with full customization and control.</p>
+
+        <h2>Real-World Applications and Early Adopters</h2>
+        <p>Major enterprises are already leveraging AgentKit to build sophisticated agent workflows that transform their operations. These early adopters demonstrate the toolkit's versatility and production readiness across diverse industries.</p>
+
+        <h3>Enterprise Success Stories</h3>
+        
+        <p><strong>Ramp:</strong> The financial technology platform is using AgentKit to build intelligent expense management agents that automatically categorize transactions, detect policy violations and provide real-time spending insights to finance teams.</p>
+
+        <p><strong>LY Corporation:</strong> This Japanese tech giant leverages AgentKit to power multi-language customer support agents that understand context across different channels and provide consistent, culturally appropriate responses.</p>
+
+        <p><strong>Klarna:</strong> The payment platform uses Agent Builder to create shopping assistants that help customers find products, compare prices and make purchase decisions through natural conversation.</p>
+
+        <p><strong>Clay:</strong> The relationship management platform employs AgentKit to build research agents that automatically gather, synthesize and organize information about contacts and companies.</p>
+
+        <p><strong>HubSpot:</strong> The CRM leader utilizes AgentKit to develop sales prospecting agents that qualify leads, schedule meetings and personalize outreach at scale.</p>
+
+        <p><strong>Canva:</strong> The design platform is building creative assistant agents that help users with design decisions, template selection and brand consistency using Agent Builder's visual workflow capabilities.</p>
+
+        <h3>Common Use Cases</h3>
+        <p>AgentKit excels in diverse scenarios:</p>
+        <ul>
+          <li><strong>Customer Support Automation:</strong> Handle complex support inquiries with context-aware agents</li>
+          <li><strong>Internal Knowledge Assistants:</strong> Navigate company documentation and answer employee questions</li>
+          <li><strong>HR Onboarding:</strong> Guide new employees through orientation processes</li>
+          <li><strong>Research and Analysis:</strong> Conduct multi-step research and synthesize findings</li>
+          <li><strong>Code Review and Analysis:</strong> Automate code quality checks and provide feedback</li>
+          <li><strong>Content Generation:</strong> Create and curate content through collaborative workflows</li>
+          <li><strong>Sales Prospecting:</strong> Qualify leads and personalize outreach</li>
+          <li><strong>Financial Planning:</strong> Provide personalized financial advice and planning</li>
+          <li><strong>Troubleshooting Bots:</strong> Diagnose and resolve technical issues</li>
+        </ul>
+
+        <h2>Competitive Landscape: AgentKit vs. Traditional Automation</h2>
+        <p>AgentKit enters a market dominated by workflow automation tools like n8n, Zapier and Make, but it brings fundamentally different capabilities that position it in a category of its own.</p>
+
+        <h3>Key Differentiators</h3>
+        
+        <p><strong>Intelligence vs. Rules:</strong> While traditional automation tools rely on predefined rules and triggers, AgentKit leverages AI models for intelligent decision-making, natural language understanding and adaptive behavior.</p>
+
+        <p><strong>Conversation-First:</strong> ChatKit provides native chat interfaces, whereas traditional tools require custom UI development for conversational experiences.</p>
+
+        <p><strong>Multi-Agent Coordination:</strong> Agent Builder supports complex workflows with multiple specialized agents that collaborate, something not possible in traditional automation platforms.</p>
+
+        <p><strong>Built-In Evaluation:</strong> Agent Evals provides sophisticated performance measurement and optimization capabilities that don't exist in workflow automation tools.</p>
+
+        <p><strong>LLM-Native:</strong> AgentKit is built from the ground up for large language model integration, with native support for reasoning, chain-of-thought and function calling.</p>
+
+        <h3>Complementary Rather Than Competitive</h3>
+        <p>Many organizations will use AgentKit alongside traditional automation tools, with each serving different purposes. Traditional automation excels at deterministic, high-volume tasks, while AgentKit shines in scenarios requiring understanding, reasoning and natural interaction.</p>
+
+        <h2>Pricing, Availability and Beta Access</h2>
+        <p>AgentKit is currently available in beta to developers and enterprises through the OpenAI platform. Access requires an OpenAI API account with appropriate tier access.</p>
+
+        <h3>Beta Program</h3>
+        <p>The beta program provides early access to all AgentKit components. Developers can start building immediately through the OpenAI dashboard, with workflows hosted on OpenAI's infrastructure at no additional cost during the beta period.</p>
+
+        <h3>General Availability Plans</h3>
+        <p>OpenAI has announced plans for general availability in early 2026, with pricing details to be revealed closer to launch. The company has indicated that pricing will follow usage-based models similar to existing API offerings, with costs tied to model inference, storage and agent execution time.</p>
+
+        <h3>API Availability</h3>
+        <p>The Agents SDK is available now in Python, with Node.js support coming soon. The SDK is open-source and available on GitHub, allowing developers to inspect, modify and contribute to the codebase.</p>
+
+        <h2>Technical Implementation: Under the Hood</h2>
+        <p>AgentKit is built on OpenAI's latest model capabilities and integrates seamlessly with the broader OpenAI platform.</p>
+
+        <h3>Model Support</h3>
+        <p>Agent Builder supports all OpenAI models, including GPT-4, GPT-4 Turbo and GPT-3.5 Turbo. Developers can select models on a per-agent basis, optimizing for cost and performance requirements.</p>
+
+        <h3>Architecture Patterns</h3>
+        <p>AgentKit supports multiple architectural patterns:</p>
+        <ul>
+          <li><strong>Single-Agent Workflows:</strong> One agent handles the entire task from start to finish</li>
+          <li><strong>Multi-Agent Collaboration:</strong> Specialized agents work together, passing context and results</li>
+          <li><strong>Hierarchical Agents:</strong> Supervisor agents coordinate multiple worker agents</li>
+          <li><strong>Sequential Processing:</strong> Agents process tasks in defined sequences</li>
+          <li><strong>Conditional Routing:</strong> Logic nodes route requests based on content or context</li>
+        </ul>
+
+        <h3>Safety and Security</h3>
+        <p>Building agent workflows comes with inherent risks, including prompt injection, data leakage and unintended behaviors. AgentKit addresses these through:</p>
+        <ul>
+          <li><strong>Input Validation:</strong> Guardrail nodes check inputs before processing</li>
+          <li><strong>Output Filtering:</strong> Validate agent responses before returning to users</li>
+          <li><strong>Access Controls:</strong> Fine-grained permissions for connectors and data sources</li>
+          <li><strong>Audit Logging:</strong> Complete trace of all agent actions for security review</li>
+          <li><strong>Sandboxed Execution:</strong> Python graders and custom code run in isolated environments</li>
+        </ul>
+
+        <h2>The Developer Experience: Building in Minutes</h2>
+        <p>The Christina Huang demonstration at DevDay showcased what makes AgentKit revolutionary. Building what traditionally took weeks of coding, testing and iteration happened in under eight minutes on stage.</p>
+
+        <h3>Rapid Prototyping</h3>
+        <p>Agent Builder's visual interface allows developers to test ideas immediately. The preview feature provides instant feedback, showing exactly how agents will behave before any deployment code is written.</p>
+
+        <h3>Template Acceleration</h3>
+        <p>Pre-built templates provide starting points for common use cases. Developers can customize these templates rather than building from scratch, dramatically reducing time to first working prototype.</p>
+
+        <h3>Iteration Speed</h3>
+        <p>The combination of visual design, instant preview and integrated evaluation creates a tight feedback loop. Developers can iterate on agent behavior in minutes rather than hours, testing improvements immediately.</p>
+
+        <h2>Notable Quotes and Industry Reactions</h2>
+        <p>The announcement generated significant excitement in the developer and AI communities.</p>
+
+        <blockquote>
+          <p>"AgentKit provides everything you need to build, deploy and optimize agent workflows with way less friction."</p>
+          <footer>Sam Altman, CEO of OpenAI</footer>
+        </blockquote>
+
+        <p>Industry analysts noted the strategic importance of the release. By providing a complete toolkit rather than just models, OpenAI is positioning itself as the platform of choice for enterprise agent development.</p>
+
+        <p>Early beta users praised the developer experience, with many highlighting the speed of going from concept to working agent. The visual interface received particular acclaim for making agent development accessible to teams without deep AI expertise.</p>
+
+        <h2>Future Roadmap and Expanding Capabilities</h2>
+        <p>OpenAI has indicated that AgentKit represents just the beginning of their agent platform vision. The company plans to add additional capabilities in coming months.</p>
+
+        <h3>Anticipated Enhancements</h3>
+        <ul>
+          <li><strong>Voice Agent Support:</strong> Integration with OpenAI's voice capabilities for audio-native agents</li>
+          <li><strong>Expanded Connector Library:</strong> Additional pre-built integrations with popular enterprise tools</li>
+          <li><strong>Advanced Analytics:</strong> Deeper insights into agent performance and user interactions</li>
+          <li><strong>Collaborative Features:</strong> Team workflows for building and managing agents together</li>
+          <li><strong>Marketplace:</strong> Community-contributed templates, connectors and agents</li>
+          <li><strong>Multi-Modal Capabilities:</strong> Native support for image, video and document processing</li>
+          <li><strong>Fine-Tuning Integration:</strong> Use custom fine-tuned models in agent workflows</li>
+        </ul>
+
+        <h2>Best Practices for Building Production Agents</h2>
+        <p>OpenAI recommends several best practices for teams building with AgentKit.</p>
+
+        <h3>Start with Templates</h3>
+        <p>Use pre-built templates as starting points. These templates embody best practices and proven patterns, providing solid foundations for customization.</p>
+
+        <h3>Build Iteratively</h3>
+        <p>Start simple and add complexity gradually. Use the preview feature to test each addition before moving forward.</p>
+
+        <h3>Implement Guardrails Early</h3>
+        <p>Don't treat safety as an afterthought. Build guardrails into workflows from the beginning, validating inputs and outputs at each critical step.</p>
+
+        <h3>Evaluate Continuously</h3>
+        <p>Set up evaluation workflows early and run them frequently. The more often you evaluate, the easier it becomes to catch regressions before they reach production users.</p>
+
+        <h3>Monitor in Production</h3>
+        <p>Use trace grading and logging to monitor agent behavior in production. Real user interactions often reveal edge cases missed during development.</p>
+
+        <h3>Version Your Workflows</h3>
+        <p>Create new versions when making significant changes. This allows quick rollback if issues arise and provides a history of your agent's evolution.</p>
+
+        <h2>Getting Started with AgentKit Today</h2>
+        <p>Developers can start building with AgentKit immediately through the OpenAI platform.</p>
+
+        <h3>Quick Start Steps</h3>
+        <ol>
+          <li>Log into your OpenAI account at platform.openai.com</li>
+          <li>Navigate to the Agent Builder from your dashboard</li>
+          <li>Choose a template or start from scratch</li>
+          <li>Design your workflow using the visual canvas</li>
+          <li>Preview and test with sample data</li>
+          <li>Publish your workflow to get a workflow ID</li>
+          <li>Follow the ChatKit quickstart to embed in your application</li>
+        </ol>
+
+        <h3>Learning Resources</h3>
+        <p>OpenAI provides comprehensive documentation and resources:</p>
+        <ul>
+          <li><strong>Official Documentation:</strong> Complete guides for all AgentKit components</li>
+          <li><strong>Interactive Demos:</strong> chatkit.world provides hands-on exploration</li>
+          <li><strong>GitHub Repositories:</strong> Sample applications and starter templates</li>
+          <li><strong>Widget Builder:</strong> Browse and test available ChatKit widgets</li>
+          <li><strong>ChatKit Playground:</strong> Interactive environment for learning by doing</li>
+        </ul>
+
+        <h2>The Agent Development Revolution</h2>
+        <p>AgentKit represents a fundamental shift in how AI agents are built and deployed. By providing a complete, integrated toolkit that addresses every stage of the agent lifecycle, from design through deployment to optimization, OpenAI is dramatically lowering the barriers to agent development.</p>
+
+        <p>The combination of visual design tools, production-ready UI components, comprehensive evaluation frameworks and secure integration capabilities creates a platform that makes agent development accessible to a much broader audience. What once required specialized AI expertise and months of development can now be accomplished by general developers in days or even hours.</p>
+
+        <p>For enterprises, this democratization of agent development opens new possibilities for automation, customer engagement and operational efficiency. The early adopters showcased by OpenAI demonstrate the breadth of applications, from financial services to e-commerce to content creation.</p>
+
+        <p>As AgentKit moves from beta to general availability and continues to expand its capabilities, it's positioned to become the standard platform for enterprise agent development, much as AWS became the standard for cloud infrastructure. The race to build the best AI agents has begun and OpenAI has just provided the toolkit that could define how that race is run.</p>
+
+        <p><strong>Ready to start building?</strong> Visit the OpenAI platform today to access Agent Builder and begin creating your first autonomous agent workflow.</p>
+
+        <div style="border-top: 2px solid rgba(59, 130, 246, 0.3); margin-top: 60px; padding-top: 30px;">
+          <h2 style="color: rgba(59, 130, 246, 0.9); font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center;">
+            <svg style="width: 24px; height: 24px; margin-right: 8px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+            </svg>
+            Sources & Further Reading
+          </h2>
+          <div style="display: grid; gap: 16px;">
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Introducing AgentKit - OpenAI Official Announcement</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Official announcement from OpenAI introducing AgentKit, the complete toolkit for building, deploying and optimizing AI agents with Agent Builder, ChatKit, Evals and Connector Registry.</p>
+              <a href="https://openai.com/index/introducing-agentkit/" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                Read Official Announcement
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Agent Builder Documentation - OpenAI Platform</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Comprehensive documentation on Agent Builder, including visual workflow design, node references, templates, debugging tools and deployment options.</p>
+              <a href="https://platform.openai.com/docs/guides/agent-builder" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Agent Builder Docs
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">ChatKit Documentation - OpenAI Platform</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Complete guide to ChatKit's embeddable chat interface, including setup instructions, customization options, widgets, actions and deployment strategies.</p>
+              <a href="https://platform.openai.com/docs/guides/chatkit" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View ChatKit Docs
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Agent Evals Documentation - OpenAI Platform</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">Learn about measuring agent quality with reproducible evaluations, trace grading, datasets, automated prompt optimization and third-party model support.</p>
+              <a href="https://platform.openai.com/docs/guides/agent-evals" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Evals Docs
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.05); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 8px; padding: 20px;">
+              <h3 style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin: 0 0 8px 0;">Agents Overview - OpenAI Platform</h3>
+              <p style="color: rgba(255, 255, 255, 0.7); margin: 0 0 12px 0; font-size: 0.9rem;">High-level overview of OpenAI's agent development ecosystem, including how to build, deploy and optimize agents with AgentKit's modular toolkit.</p>
+              <a href="https://platform.openai.com/docs/guides/agents" target="_blank" style="color: rgba(59, 130, 246, 0.9); text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                View Agents Overview
+                <svg style="width: 16px; height: 16px; margin-left: 4px; fill: currentColor;" viewBox="0 0 24 24">
+                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  },
   "openai-chatgpt-study-mode-revolutionizing-ai-learning": {
     id: 12,
     title: "OpenAI Launches ChatGPT Study Mode: Revolutionizing AI-Powered Learning for Students",
