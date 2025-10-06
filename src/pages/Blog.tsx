@@ -9,6 +9,16 @@ import { Link } from "react-router-dom";
 // Blog posts data - emptied for production
 const blogPosts = [
   {
+    id: 13,
+    title: "OpenAI Unveils AgentKit and Agent Builder: The Complete Toolkit for Building Production-Ready AI Agents",
+    excerpt: "Discover OpenAI's revolutionary AgentKit launched at DevDay 2025, featuring Agent Builder's visual canvas, ChatKit's embeddable chat, powerful Evals and Connector Registry. Learn how enterprises like Ramp, Klarna and HubSpot are building autonomous agents in minutes, not months.",
+    imageUrl: "https://drive.google.com/thumbnail?id=1Y4oE567viupzvFIF3RHHLtxQEByKfKUU&sz=w1632",
+    date: "October 6, 2025",
+    readTime: "18 min read",
+    slug: "openai-agentkit-agent-builder-complete-toolkit",
+    featured: true
+  },
+  {
     id: 12,
     title: "OpenAI Launches ChatGPT Study Mode: Revolutionizing AI-Powered Learning for Students",
     excerpt: "Discover OpenAI's groundbreaking ChatGPT Study Mode that transforms passive learning into interactive tutoring. Learn about Socratic questioning, step-by-step guidance, platform availability and how this revolutionary feature helps students build deeper understanding rather than just getting answers.",
@@ -16,7 +26,7 @@ const blogPosts = [
     date: "August 1, 2025",
     readTime: "14 min read",
     slug: "openai-chatgpt-study-mode-revolutionizing-ai-learning",
-    featured: true
+    featured: false
   },
   {
     id: 11,
